@@ -1,0 +1,416 @@
+﻿
+@using WebSiteClothesStore.Models;
+@using WebSiteClothesStore.ModelTemp;
+@{ MydataContext db = new MydataContext(); }
+
+<link href="~/Content/css/HeaderOfLayoutPartial.css" rel="stylesheet" />
+<div class="header">
+
+    <div class="logoHeader">
+        <a style="color: white;" class="logoHeader--item" href="@Url.Action("Index","Home")">MH_Fashion</a>
+
+    </div>
+    @* tim kiem *@
+
+   
+
+    <ul class="left-header">
+        
+            <div class="w3ls_right_nav ml-auto d-flex navLogin">
+
+                <ul class="account">
+                    @if (Session["TaiKhoanAdmin"] != null || Session["TaiKhoanAdmin"] != "")
+                    {
+                        Admin admin = (Admin)Session["TaiKhoanAdmin"];
+                        if (admin != null)
+                        {
+                                <p>Wellcome: </p><li style="color: white" > @admin.TenNV </li>
+                                @Html.ActionLink(" Đăng xuất", "DangXuat", "Admin");
+                        }
+                        else
+                        {
+                            <ul class="dangnhap">
+                                <li><a style="color: white" id="btnDangNhap" href="@Url.Action("DangNhap","Admin")">Đăng nhập</a></li>
+                            </ul>
+                        }
+                    }
+                </ul>
+
+            </div>
+          
+        </li>
+
+    </ul>
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style>
+    .account {
+        display: flex;
+        list-style: none;
+    }
+
+    .left-header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logoHeader--item {
+        margin: 0 20px;
+        font-size: 30px;
+        text-decoration: none !important;
+    }
+
+        .logoHeader--item:hover {
+            color: white;
+            background: #23ABF2;
+            border-radius: 3px;
+        }
+
+    .formLogin {
+        background-color: antiquewhite;
+    }
+
+    .row1 h1 {
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .row1 p {
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .footerDK {
+        margin-top: -30px;
+    }
+
+    .btn.dis
+    .logoHeader h1 {
+        margin: 0;
+    }
+
+    .row1 a {
+        font-weight: bold;
+        color: black;
+    }
+
+    .search--item {
+        height: 30px;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .header_hover_oo::before {
+        position: absolute;
+        width: 100%;
+        content: "";
+        display: block;
+        background-color: white;
+        height: 20px;
+        top: -6px;
+    }
+
+    .header_hover {
+        position: relative;
+    }
+
+        .header_hover:before {
+            content: "";
+            position: absolute;
+            width: 15%;
+            height: 25px;
+            background-color: white;
+            top: -7%;
+            left: 0;
+            border-top-left-radius: 2000px;
+            border-top-right-radius: 2000px;
+        }
+
+    .itemProduct {
+        list-style: none;
+        padding-left: 20px;
+    }
+
+    .mucluc-item__qr:hover .header_hover {
+        display: block;
+    }
+
+    .row3 {
+        padding: 30px;
+    }
+
+    .loginInformation {
+        padding-right: 30px;
+    }
+
+    .header_hover {
+        background-color: white;
+        position: absolute;
+        width: 500px;
+        height: 300px;
+        display: none;
+        z-index: 3;
+    }
+
+    .register-form {
+        border-radius: 50px 50px 50px;
+    }
+
+    .mucluc {
+        list-style: none;
+        display: flex;
+        color: lightgray;
+        font-size: 20px;
+        position: relative;
+    }
+
+    .mucluc-item {
+        margin: 0 15px;
+        cursor: pointer;
+    }
+        /* .mucluc:before{
+        content:"";
+        position:absolute;
+        width:100%;
+        height:20px;
+        background-color:black;
+        top:0;
+        left:0;
+    }*/
+        .mucluc-item a {
+            color: lightgray;
+            text-decoration: none;
+        }
+
+            .mucluc-item a:hover {
+                color: #3377ff
+            }
+
+        .mucluc-item:hover {
+            color: white;
+        }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    :root {
+        --text-color: white;
+    }
+
+    .oooo {
+        display: flex;
+        font-size: 25px;
+        margin: 29px;
+    }
+
+        .oooo div {
+            padding-right: 20px;
+        }
+
+    .giohang--cha {
+        margin: 0;
+    }
+
+    .left-header {
+        display: flex;
+        list-style: none;
+    }
+
+    .user {
+        margin: 0 15px;
+    }
+
+    .giohang {
+        margin: 0 20px;
+    }
+
+    .btnRegistration {
+        font-weight: bold;
+        color: black;
+    }
+
+    #btnLogin {
+        font-weight: bold;
+        border-radius: 6px 6px 6px;
+    }
+
+    .dangnhap {
+        /* margin: 0 12px;
+        display: flex;
+        list-style: none;
+        font-size: 20px;
+        padding-left: 0*/
+    }
+
+    .btn {
+        font-weight: bold;
+    }
+
+    .search {
+        display: flex;
+        list-style: none;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        height: 60px;
+        /*position: fixed;*/
+        width: 100%;
+        /* background-color: #4ABDAB*/
+        background-image: linear-gradient(0, #0E9599, #0F4EA5);
+        line-height: 60px;
+    }
+
+    .closeForm {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: red;
+        color: white;
+        border: none;
+    }
+
+    .closeForm {
+        font-size: 10px;
+        border-radius: 0px 20px 0px 0px;
+        padding: 10px;
+        right: -1px;
+        top: -1px;
+    }
+
+    #popup-login {
+        top: 10%;
+        left: 0;
+        width: 30%;
+        height: 70%;
+        background-color: aliceblue;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 10% 10% 10% 10%;
+    }
+
+    .formLogin {
+        top: 0;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.5);
+        z-index: 99;
+        display: none;
+    }
+
+    #login-form {
+        border-radius: 20px 20px 20px 20px;
+    }
+
+    .userName {
+        padding: 5px;
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 15px;
+        border-radius: 15px 15px;
+        border-radius: 15px 15px 15px;
+        border-radius: 15px 15px 15px;
+    }
+
+    .passWord {
+        width: 100%;
+        padding: 5px;
+        border-radius: 15px;
+        border-radius: 15px 15px;
+        border-radius: 15px 15px 15px;
+        border-radius: 15px 15px 15px;
+    }
+
+    .top_nav {
+        border: solid 2px black;
+        display: flex;
+    }
+
+    .nav-Login {
+        display: flex;
+    }
+
+    .headerLogin {
+        background-color: yellow;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .register-form {
+        background-color: black;
+        width: 50%;
+        height: 80%;
+        top: 10%;
+        left: 25%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        min-width: 50%;
+        min-height: 80%;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0,0,0,.125);
+        border-radius: 0.5rem
+    }
+
+    .formRegister {
+        display: flex;
+    }
+
+    .register-form {
+        display: none;
+    }
+</style>
+<script>
+    $("#btnDangNhap").click(function () {
+        $(".formLogin").css({
+            "display": "block",
+        });
+        $("#popup-login").fadeIn(500);
+
+    })
+    $(".closeForm").click(function () {
+        $("#popup-login").slideUp(500);
+        $(".formLogin").css({
+            "display": "none",
+        });
+        $(".formLogin").slideUp(500);
+    })
+    $("#btnLogin").click(function () {
+        var taiKhoan = $(".TaiKhoan").val();//.val() lấy giá trị trong thẻ
+        var matKhau = $(".MatKhau").val();
+        if (taiKhoan == "" || matKhau == null) {
+            alert("Lỗi");
+            return;
+        }
+    });
+    $(".btnRegistration").click(function () {
+        $("#popup-login").css({
+            "display": "none",
+        });
+        $(".register-form").fadeIn(500);
+    });
+    $(".btnFormDangNhap").click(function () {
+        $("#popup-login").css({
+            "display": "block",
+        });
+        $(".register-form").fadeOut(500);
+    })
+</script>

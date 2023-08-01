@@ -1,0 +1,48 @@
+﻿
+@using WebSiteClothesStore.Models
+@model IEnumerable<LoaiSanPham>
+   
+    <h2 class="titleCaption">Danh mục sản phẩm</h2>
+<div class="nav-item nav-item-product navCategoryProduct">
+    <div class="row productsItem">
+        <ul>
+            @foreach (var item in Model)
+            {
+                if (item.MaLoai == ViewBag.MaLoai)
+                {
+                    <li> <a style="color:red;" class="title-category" href="@Url.Action("ProductFollowIDCategory","Product",new {idCategory=item.MaLoai })">@item.TenLoai</a></li>
+                }
+                else
+                {
+                    <li> <a class="title-category" href="@Url.Action("ProductFollowIDCategory","Product",new {idCategory=item.MaLoai })">@item.TenLoai</a></li>
+                }
+            }
+        </ul>
+    </div>
+</div>
+<style>
+    .titleCaption {
+        margin-top: 5px;
+    }
+        .titleCaption:after {
+            content: "";
+            position: absolute;
+            top: 38px;
+            left: 10px;
+            height: 2px;
+            width: 90%;
+            background-color: black;
+    
+        }
+    .productsItem{
+        padding-left:20px;
+    }
+    .productsItem li {
+        list-style: none;
+    }
+    .productsItem li a {
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+    }
+</style>

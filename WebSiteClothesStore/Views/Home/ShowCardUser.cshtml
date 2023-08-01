@@ -1,0 +1,118 @@
+﻿@model IEnumerable<WebSiteClothesStore.Models.DonDatHang>
+@using WebSiteClothesStore.Models;
+
+@{
+    ViewBag.Title = "ShowCardUser";
+    Layout = "~/Views/HomeLayout/CardLayout.cshtml";
+    MydataContext db = new MydataContext();
+}
+
+<h2>Đơn hàng của bạn</h2>
+<select>
+    <option value="daGiao">
+        Đã giao
+    </option>
+    <option value="chuaGiao">
+        Chưa giao
+    </option>
+</select>
+<div class="myCard">
+
+
+    <table class="table">
+        <tr>
+            <th>
+                Tên khách hàng
+            </th>
+            <th>
+                Tình trạng đơn hàng
+            </th>
+            <th>
+                Tình trạng thanh toán
+            </th>
+            <th>
+                Ưu đãi
+            </th>
+            <th>
+                Ngày dặt
+            </th>
+            <th>
+                Ngày giao dự kiến
+            </th>
+            <th>
+                Tổng tiền
+            </th>
+            <th></th>
+        </tr>
+
+        @if (Model != null)
+        {
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.KhachHang.TenKH)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TinhTrangDDH)
+                    </td>
+                    <td>
+                        @if (item.DaThanhToan == false)
+                        {
+                            <span>Chưa thanh toán</span>
+                        }
+                        else
+                        {
+                            <span>Đã thanh toán</span>
+                        }
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UuDai)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NgayDat)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NgayGiao)
+                    </td>
+                    <td>
+                        @db.CTDonDatHangs.Where(p => p.MaDDH == item.MaDDH).Sum(p => p.DonGia)
+                    </td>
+                    <td>
+
+                        @if (item.DaThanhToan != true)
+                        {
+                            if (item.DaHuy != true)
+                            {
+                                <a href="@Url.Action("DestroyCard","Home" ,new {@maDH = item.MaDDH })" style="color:red;">
+                                    Hủy đơn hàng | 
+                                </a>
+                            }
+                            else
+                            {
+                                <a href="@Url.Action("ReOrderCard","Home" ,new {@maDH = item.MaDDH })" style="color:blue;">
+                                    Đặt lại đơn | 
+                                </a>
+                            }
+
+                        }
+
+                        <a href="@Url.Action("DetailCard","Home" ,new {@maDH = item.MaDDH })" style="color:black;">
+                            Xem chi tiết đơn hàng
+                        </a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                Bạn chưa có đơn hàng nào
+            </tr>
+        }
+
+
+    </table>
+</div>

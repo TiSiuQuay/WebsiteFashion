@@ -1,0 +1,154 @@
+﻿@using WebSiteClothesStore.Models;
+@model IEnumerable<CTSanPham>
+@{
+    ViewBag.Title = "ListProductAdmin";
+    Layout = "~/Views/HomeLayout/ProductLayoutAdmin.cshtml";
+}
+
+<h2>Danh sách sản phẩm</h2>
+
+<table class="table">
+    <tr >
+        <th>
+            Tên Loại
+        </th>
+        <th>
+            Tên Sản Phẩm
+        </th>
+        <th>
+            Đồng Giá
+        </th>
+        <th>
+            Ngày Cập nhật
+        </th>
+        <th>
+            Mô Tả
+        </th>
+        <th>
+            Mã Seal
+        </th>
+        <th>
+            Ảnh 1
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var groupItem in Model.GroupBy(n => n.BangSanPham))
+    {
+        //lấy dữu liệu theo sản phẩm dựa trên danh sách ct sản phẩm groupby để không bị trùng sản phẩm
+        // group theo bảng vì entity đã hổ trợ thuộc tính bảng nên có thể làm
+        // group theo bảng có thể lấy được tất cả thuộc tính của bảng được group còn theo mã thì không
+        
+<tr class="rowProduct">
+
+    <td>
+        @groupItem.Key.LoaiSanPham.TenLoai
+    </td>
+    <td>
+        @groupItem.Key.TenSP
+    </td>
+    <td>
+        @groupItem.Key.Dongia
+    </td>
+    <td>
+        @groupItem.Key.NgapCapNhat
+    </td>
+    <td>
+        @groupItem.Key.MoTa
+    </td>
+    <td>
+        @groupItem.Key.GiamGia
+    </td>
+    <td>
+        <img src=" @groupItem.Key.Anh1" width="200px" height="200px" alt="Set UpDate" />
+    </td>
+
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = @groupItem.Key.MaSP }) |
+
+        @Html.ActionLink("Delete", "Delete", new { id = @groupItem.Key.MaSP })
+    </td>
+
+    <td>
+    </td>
+    <td class="detailProduct">
+        <div class="tableDetailClothes">
+            <div>
+                <span>
+                    Tên sản phẩm
+                </span>
+                <span>
+                    Kích thước
+                </span>
+                <span>
+                    Số lượng còn
+                </span>
+
+                <span></span>
+            </div>
+            @foreach (var item in groupItem)
+            {
+                //lấy dữu liệu theo sản phẩm dựa trên danh sách ct sản phẩm groupby để không bị trùng sản phẩm
+                // group theo bảng vì entity đã hổ trợ thuộc tính bảng nên có thể làm
+                // group theo bảng có thể lấy được tất cả thuộc tính của bảng được group còn theo mã thì không
+
+                <div>
+                    <span>
+                        @item.BangSanPham.TenSP
+                    </span>
+                    <span>
+                        @item.KichThuoc
+                    </span>
+                    <span>
+                        @item.SoLuongTon
+                    </span>
+                    <span>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.MaSP }) |
+
+                        @Html.ActionLink("Delete", "Delete", new { id = item.MaSP })
+                    </span>
+                </div>
+            }
+
+        </div>
+    </td>
+</tr>
+
+           
+      
+
+    }
+</table>
+
+<style>
+    .rowProduct{
+        position:relative;
+    }
+    .detailProduct {
+        display: none;
+        position: absolute;
+        width: 25%;
+      
+        left: 75%;
+       
+        top: 70px;
+    }
+    .tableDetailClothes{
+        position:absolute;
+        width:100%;
+    }
+</style>
+
+<script>
+    $(".rowProduct").click(function (e) {
+        var tdDetailPro = e.currentTarget.querySelector(".detailProduct");
+        if ($(tdDetailPro).css('display') === 'none') {
+            $(tdDetailPro).fadeIn(200);
+        } else {
+            $(tdDetailPro).fadeOut(200);
+        }
+      
+       
+       
+    })
+  
+</script>

@@ -1,0 +1,169 @@
+﻿@model WebSiteClothesStore.Models.BangSanPham
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/HomeLayout/ProductLayoutAdmin.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>BangSanPham</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.LoaiSanPham.TenLoai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LoaiSanPham.TenLoai)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NhaCC.TenNCC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NhaCC.TenNCC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NhaSX.TenNSX)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NhaSX.TenNSX)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TenSP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenSP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dongia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dongia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NgapCapNhat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgapCapNhat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MoTa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MoTa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LuotXem)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LuotXem)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LuotBinhChon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LuotBinhChon)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LuotBInhLuan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LuotBInhLuan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SoLanMua)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoLanMua)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GiamGia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GiamGia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DaXoa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DaXoa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Anh1)
+        </dt>
+
+        <dd>
+            <img src="@Model.Anh1" width="100px" height="100px"/>
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Anh2)
+        </dt>
+
+        <dd>
+            <img src="@Model.Anh2" width="100px" height="100px" />
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Anh3)
+        </dt>
+
+        <dd>
+            <img src="@Model.Anh3" width="100px" height="100px" />
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Anh4)
+        </dt>
+
+        <dd>
+            <img src="@Model.Anh4" width="100px" height="100px" />
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Anh5)
+        </dt>
+
+        <dd>
+            <img src="@Model.Anh5" width="100px" height="100px" />
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "ListSanPham")
+        </div>
+    }
+</div>

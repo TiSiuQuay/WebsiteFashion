@@ -1,0 +1,66 @@
+﻿@using WebSiteClothesStore.Models
+@model IEnumerable<LoaiSanPham>
+
+<div>
+    <h2>Loại sản phẩm</h2>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-sm-4 col-md-4 col-lg-4 category">
+                <img style="width: 300px;" src="@item.Logo" alt="">
+                <h5>@item.TenLoai</h5>
+                <a class="info infoCaterory" href="@Url.Action("ProductFollowIDCategory","Product",new {idCategory=item.MaLoai })">Đến danh mục</a>
+            </div>
+        }
+    </div>
+</div>
+
+<style>
+    h2{
+        text-align: center;
+    }
+    .category {
+        position: relative;
+        transition: background-color .3s linear;
+    }
+    .category h5{
+        position:absolute;
+        top:5px;
+        left:20px;
+        font-size:16px;
+        font-weight:700;
+        color:brown;
+    }
+    .infoCaterory {
+        position: absolute;
+        transform: translateX(50%);
+        transform: translateY(200%);
+        left: 23%;
+        opacity:0;
+        background-color: rgba(0,0,0,.5);
+        width: 40%;
+        padding: 10px;
+        text-align: center;
+        transition: transform .3s linear;
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .category:hover .infoCaterory {
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        transform: translateY(150px);
+        opacity: 1;
+        list-style:none;
+    }
+    .category:hover ::after{
+        content:"";
+        background-color: rgba(0,0,0,.5);
+    }
+
+</style>
+

@@ -1,0 +1,452 @@
+﻿@using WebSiteClothesStore.Models
+
+@{
+    Layout = "~/Views/HomeLayout/ProductLayout.cshtml";
+}
+@{
+
+    IEnumerable<BangSanPham> listProduct = (IEnumerable<BangSanPham>)ViewBag.ListPro;
+    BangSanPham product = ViewBag.Product as BangSanPham;
+}
+
+<style>
+    .title_t{
+        color: black;
+    }
+    .desrip{
+        background:white;
+    }
+    .sizeProduct{
+        margin-bottom:10px;
+        height:60px;
+    }
+    #orderPro{
+        max-height:150px;
+        max-width:250px;
+    }
+ .label-size{
+    padding:29px;
+    text-align:center;
+ }
+</style>
+
+<body>
+    <div>
+        <hr />
+        <div class="detailProduct">
+
+            <div class="imageProduct">
+                <div class="allImage">
+                    <img class="imageMain" width:100%;
+            height:500px; src="@product.Anh1" />
+                    <img class="imageMain" width:100%;
+            height:500px; src="@product.Anh2" />
+                    <img class="imageMain" width:100%;
+            height:500px; src="@product.Anh3" />
+                    <img class="imageMain"width:100%;
+            height:500px; src="@product.Anh4" />
+                    <img class="imageMain"width:100%;
+            height:500px; src="@product.Anh5" />
+                </div>
+                
+                <div class="box-imageExtra">
+                    <img class="imageExtra" src="@product.Anh1" />
+                    <img class="imageExtra" src="@product.Anh2" />
+                    <img class="imageExtra" src="@product.Anh3" />
+                    <img class="imageExtra" src="@product.Anh4" />
+                    <img class="imageExtra" src="@product.Anh5" />
+                </div>
+            </div>
+            <div class="contentProduct">
+
+                <span class="title-detail-pro title_t ">Tên sản phẩm:</span>
+                <span class="title-detail-pro title_t"> @Html.DisplayFor(model => product.TenSP)</span>
+
+
+                <span class="title-detail-pro title_t">Tên nhà sản xuất: </span>
+                <span class="ti-detail-pro title_t"> @Html.DisplayFor(model => product.NhaSX.TenNSX)</span>
+
+
+                <span class="title-detail-pro title_t">Loại sản phẩm: </span>
+
+                @Html.DisplayFor(model => product.LoaiSanPham.TenLoai)
+
+                @if (product.CTSanPhams.Sum(p => p.SoLuongTon) == 0)
+                {
+                    <span class="inventory-product">Hết hàng</span>
+                }
+                else
+                {
+                    <span class="inventory-product">Còn hàng</span>
+                }
+
+                @if (product.GiamGia != 0)
+                {
+                    double newPrice = (double)((double)product.Dongia - (double)product.Dongia * product.GiamGia / 100);
+                    <span class="discount-product">- @product.GiamGia %</span>
+                    <span class="price">
+
+                        <span class="title-detail-pro title_t">Đơn giá:</span>
+                        <del style="margin-right:10px;">
+                            <span class="woocommerce-Price-amount amount">
+                                @product.Dongia.ToString("#,##")
+                                <span class="woocommerce-Price-currencySymbol price-pro">đ</span>
+                            </span>
+                        </del>
+
+                        <ins>
+                            <span class="woocommerce-Price-amount amount price-pro">
+                                @newPrice.ToString("#,##")
+                                <span class="woocommerce-Price-currencySymbol">đ</span>
+                            </span>
+                        </ins>
+                    </span>
+                }
+                else
+                {
+                    <span class="title-detail-pro title_t">Đơn giá: </span>
+
+                    <span class="woocommerce-Price-amount amount price-pro">
+                        @product.Dongia.ToString("#,##")
+                        <span class="woocommerce-Price-currencySymbol">đ</span>
+                    </span>
+                }
+
+                <span class="title-detail-pro title_t">Lượt xem: </span>
+                <span class="content-detail-pro">  @Html.DisplayFor(model => product.LuotXem)</span>
+
+                <span class="title-detail-pro title_t">Lượt chọn: </span>
+                <span class="content-detail-pro">  @Html.DisplayFor(model => product.LuotBinhChon)</span>
+                
+                <span class="title-detail-pro title_t">Lượt bình luận: </span>
+                <span class="content-detail-pro">  @Html.DisplayFor(model => product.LuotBInhLuan)</span>
+                
+                <span class="title-detail-pro title_t">Số lần mua: </span>
+                <span class="content-detail-pro">  @Html.DisplayFor(model => product.SoLanMua)</span>
+                
+
+                @*@using (Ajax.BeginForm("AddProCard", "Card" ,new { @maSP = product.MaSP }, new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "totalThayThe", InsertionMode = InsertionMode.Replace,}))
+        {*@
+                <div class="countBuy">
+                    <input class="soLuong" style="display:none;" name="soLuong" id="soLuong" , type="number" min="1" max="500" required value="1" /> <label for="soLuong" id="lableSoLuong"></label>
+                </div>
+                <div class="sizeProduct">
+                    @{
+                        var listSize = product.CTSanPhams.Where(p => p.MaSP == product.MaSP);
+                        int i = 0;
+
+                        foreach (var size in listSize)
+                        {
+                            i++;
+                            @*<div class="size" id="size" name="size" value="@size.MaCT">@size.KichThuoc</div>*@
+
+                            <input class="radio-size @i" name="size" value="@size.MaCT" id="@size.KichThuoc" data-id="@size.MaCT" type="radio" required />
+                            <label for="@size.KichThuoc" data-count="@size.SoLuongTon" class="label-size @i">@size.KichThuoc</label>
+                        }
+
+                        <input type="submit" id="orderPro" data-id="@product.MaSP" value="Thêm giỏ hàng" />
+                    }
+                </div>
+
+                <div class="desrip">
+                    <span>Mô tả:</br></span>
+                    @Html.DisplayFor(model => product.MoTa)
+                </div>
+
+
+                @* } *@
+            </div>
+        </div>
+
+    </div>
+    <h2>Sản phẩm cùng loại</h2>
+    @foreach (var item in listProduct)
+    {
+        <a class="linkProduct" href="@Url.Action("DetailProduct","Product",new {@maSP =item.MaSP})">
+            <div class="product-small box ">
+                <div class="box-image">
+                    <div class="image-fade_in_back">
+
+                        <img width="300" height="300" src="@item.Anh1">
+
+                        @if (item.GiamGia != 0)
+                        {
+                            <div class="discount-product">- @item.GiamGia %</div>
+                        }
+
+                        @if (item.CTSanPhams.Sum(p => p.SoLuongTon) == 0)
+                        {
+                            <span class="inventory-product">Hết hàng</span>
+                        }
+                        <div class="image-tools is-small top right show-on-hover">
+                        </div>
+                        <div class="image-tools is-small hide-for-small bottom left show-on-hover">
+                        </div>
+                        <div class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover">
+                        </div>
+                    </div><!-- box-image -->
+
+                    @if (item.GiamGia != 0)
+                    {
+                        double newPrice = (double)((double)item.Dongia - (double)item.Dongia * item.GiamGia / 100);
+                        <span class="price">
+                            <del style="margin-right:10px;">
+                                <span class="woocommerce-Price-amount amount">
+                                    @item.Dongia.ToString("#,##")
+                                    <span class="woocommerce-Price-currencySymbol">đ</span>
+                                </span>
+                            </del>
+
+                            <ins>
+                                <span class="woocommerce-Price-amount amount">
+                                    @newPrice.ToString("#,##")
+                                    <span class="woocommerce-Price-currencySymbol">đ</span>
+                                </span>
+                            </ins>
+                        </span>
+                    }
+                    else
+                    {
+                        <span class="price">
+                            <ins>
+                                <span class="woocommerce-Price-amount amount">
+                                    @item.Dongia.ToString("#,##") VNĐ
+                                    <span class="woocommerce-Price-currencySymbol">đ</span>
+                                </span>
+                            </ins>
+                        </span>
+                    }
+
+                    <div class="box-text box-text-products text-center grid-style-2">
+                        <div class="title-wrapper"><p class="name product-title"><a href="">@item.TenSP</a></p></div>
+
+                    </div><!-- box-text -->
+                </div>
+            </div>
+        </a>
+    }
+    <style>
+        
+        .detailProduct {
+            display: flex;
+            position:relative;
+        }
+
+        .countBuy {
+            display: flex;
+        }
+
+        .imageProduct {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        img.imageMain {
+            width: 100%;
+            height:800px;
+        }
+
+        img.imageExtra {
+            width: 13%;
+            border: 1px solid black;
+            flex: 1;
+            /* flex-grow: 1; nó luôn giản ra  */
+            /* flex-shrink: 0;không cho nó co lại */
+            /* flex-basis: 100%; luôn luôn ở full */
+        }
+
+        .box-imageExtra {
+            border: 2px solid black;
+            height: 60px;
+            width: 44%;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 10px;
+        }
+        .imageProduct {
+            width: 50%;
+            overflow: hidden;
+        }
+
+        .contentProduct {
+            display: flex;
+            flex-direction: column;
+            margin-left: 50px;
+            color:black;
+            font-weight:bold;
+            font-size:30px;
+            margin-bottom:10px;
+        }
+
+        .radio-size {
+            display: none;
+        }
+
+        .label-size {
+            border: 1px solid black;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+        }
+
+        .label-size.active {
+            background-color: red;
+            color: white;
+        }
+
+        .sizeProduct{
+            display:flex;
+            max-height:150px;
+            max-width:250px;
+        }
+        
+        .inventory-product {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 50%;
+        }
+        #orderPro.enable {
+        }
+        .allImage {
+            display: flex;
+            position: relative;
+            transition: transform 0.25s linear;
+            padding: 0;
+            width: 100%;
+            /*overflow:hidden;*/
+        }
+        .imageMain {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            flex: 1 0 100%;
+            /* flex-grow: 1; nó luôn giản ra  */
+            /* flex-shrink: 0;không cho nó co lại */
+            /* flex-basis: 100%; luôn luôn ở full */
+            overflow: hidden;
+        }
+        .imageProduct{
+            /*width:100%;*/
+        }
+        .title-detail-pro{
+            font-size:26px;
+            font-weight:900;
+            display:inline-block;
+        }
+        .content-detail-pro {
+            display: inline-block;
+            font-size: 30px;
+            font-weight: 900;
+            color: blue;
+        }
+    </style>
+    <script>
+        var witdhImage = document.querySelector(".imageMain").style.width;
+        console.log(witdhImage)
+        var listImage = $(".imageMain");
+        var allImage = $(".allImage");
+        var defaulWidthImage = -878.91;
+        var index = 1;
+        var changeImage = function () {
+            if (index == listImage.length) {
+          
+                defaulWidthImage -=- 878.91
+                allImage.css({
+                    'transform': 'translateX('+defaulWidthImage+'px)',
+                });
+               
+                if (defaulWidthImage == 0)
+                    index =1;
+            } else {
+                allImage.css({
+                    'transform': 'translateX(' + defaulWidthImage + 'px)',
+                });
+                defaulWidthImage = defaulWidthImage + -878.91;
+                index++;
+                if (index == 5)
+                    defaulWidthImage = -878.91;
+            }
+            console.log(index);
+        }
+        setInterval(changeImage
+            , 2000);
+        console.log(allImage);
+
+        var radioFirst = $(".radio-size.1");
+
+        $(".radio-size.1").attr('checked', 'checked');
+        var countProduct = $(".label-size.1").data("count");
+        if (countProduct == undefined) {
+            document.getElementById("orderPro").disabled = true;
+        } else {
+            document.getElementById("orderPro").disabled = false;
+        }
+        if ($(".radio-size.1").attr('checked', 'checked')) {
+            $(".label-size.1").addClass("active");
+            var countPro = $(".label-size.1").data("count");
+            if (countPro == 0) {
+                document.getElementById("orderPro").disabled = true;
+            } else {
+                document.getElementById("orderPro").disabled = false;
+            }
+        }
+        var listLableSize = document.querySelectorAll(".label-size")
+        $(".label-size").click(function () {
+            listLableSize.forEach(function (item) {
+                if (item.classList.contains("active")) {
+                    item.classList.remove("active");
+                }
+            });
+            this.classList.add("active");
+            var countPro = $(this).data("count");
+            
+            if (countPro == 0 ) {
+                document.getElementById("orderPro").disabled = true;
+            } else {
+                document.getElementById("orderPro").disabled = false;
+            }
+
+        });
+
+        $("#soLuong").change(function (e) {
+            var countInput = $("#soLuong").val();
+            var countStill = $(".label-size.active").data("count");
+            if (countInput > countStill) {
+                document.getElementById("orderPro").disabled = true;
+                $("#lableSoLuong").html("Sản phẩm không đủ");
+            } else {
+                document.getElementById("orderPro").disabled = false;
+                $("#lableSoLuong").html("");
+            }
+        })
+        var maPro = $("#orderPro").data("id");
+
+        var countBuy = $("#soLuong").val();
+        var masize
+        var listSizeRadio = document.querySelectorAll(".radio-size")
+        $("#orderPro").click(function () {
+            listSizeRadio.forEach(function (radio) {
+                if (radio.checked == true) {
+                    masize = radio.value;
+                }
+            })
+            $.ajax({
+                type: 'POST',
+                data: { maSP: maPro, sLMua: countBuy, maSize: masize },
+                url: '/Card/AddProCard',
+                success: function (count) {
+                    $("#countCard").html(count);
+                    setTimeout(function () { alert("Mua hàng thành công") }
+                        , 100)
+                }
+            })
+
+        });
+        $(".imageExtra").click(function () {
+            $(".imageMain").attr('src', $(this).attr('src'));
+
+            console.log($(this).attr('src'));
+        })
+    </script>

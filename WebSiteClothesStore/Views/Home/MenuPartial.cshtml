@@ -1,0 +1,18 @@
+﻿
+
+@using WebSiteClothesStore.Models
+@model IEnumerable<BangSanPham>
+<li class="mucluc-item mucluc-item__qr">
+    Products
+    <div class="header_hover  header_hover_oo">
+        <ul class="itemProduct">
+            @foreach (var groupItem in Model.GroupBy(n => n.LoaiSanPham))
+            {
+                if (groupItem.Key != null)
+                {
+                    <li> <a class="titleCategory" href="@Url.Action("ProductFollowIDCategory","Product",new {idCategory=groupItem.Key.MaLoai })">@groupItem.Key.TenLoai</a></li>
+                }
+            }
+        </ul>
+    </div>
+</li>

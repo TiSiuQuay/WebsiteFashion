@@ -1,0 +1,204 @@
+﻿@model WebSiteClothesStore.Models.BangSanPham
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/HomeLayout/ProductLayoutAdmin.cshtml";
+}
+
+<h2>Chỉnh Sửa Sản Phẩm</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Bảng Sản Phẩm</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.MaSP)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.TenSP, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.TenSP, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.TenSP, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Dongia, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Dongia, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Dongia, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.MaLoai, "MaLoai", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <select name="LoaiSanPham">
+                    @foreach (var item in ViewBag.ListLoai)
+                    {
+                        <option value="@item.MaLoai"> @item.TenLoai</option>
+                    }
+
+                </select>
+                @Html.ValidationMessageFor(model => model.MaLoai, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="hinhAnhCreated">
+            <div class="form-group form-hinhanh">
+                <label class="control-label col-md-2">
+                    Hình ảnh
+                </label>
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Anh1, new { htmlAttributes = new { @class = "form-control label-hide hinhAnh1 hinhInputHide" } })
+
+                    <input id="Anh1" type="file" name="fileUpload" class="Anh1 inputAnh1" width="150px" height="150px" accept="image/*"
+                           style="display:none;" />
+                    <input type="button" value="Đổi" class="btn btn-success btn-chon btnUpload" data-id="Anh1" />
+                    <img src="@Model.Anh1" class="Anh1" id="Anh1" width="100px" height="150px" />
+                </div>
+            </div>
+
+
+            <div class="form-group form-hinhanh">
+                <label class="control-label col-md-2">
+                    Hình ảnh
+                </label>
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Anh2, new { htmlAttributes = new { @class = "form-control label-hide hinhAnh2 hinhInputHide" } })
+
+                    <input id="Anh2" type="file" name="fileUpload" class="Anh2 inputAnh2" width="150px" height="150px" accept="image/*"
+                           style="display:none;" />
+                    <input type="button" value="Đổi" class="btn btn-success btn-chon btnUpload" data-id="Anh2" />
+                    <img src="@Model.Anh2" class="Anh2" id="Anh2" width="100px" height="150px" />
+                </div>
+            </div>
+
+            <div class="form-group form-hinhanh">
+                <label class="control-label col-md-2">
+                    Hình ảnh
+                </label>
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Anh3, new { htmlAttributes = new { @class = "form-control label-hide hinhAnh3 hinhInputHide" } })
+
+                    <input id="Anh3" type="file" name="fileUpload" class="Anh3 inputAnh3" width="150px" height="150px" accept="image/*"
+                           style="display:none;" />
+                    <input type="button" value="Đổi" class="btn btn-success btn-chon btnUpload" data-id="Anh3" />
+                    <img src="@Model.Anh3" class="Anh3" id="Anh3" width="100px" height="150px" />
+                </div>
+            </div>
+
+            <div class="form-group form-hinhanh">
+                <label class="control-label col-md-2">
+                    Hình ảnh
+                </label>
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Anh4, new { htmlAttributes = new { @class = "form-control label-hide hinhAnh4 hinhInputHide" } })
+
+                    <input id="Anh4" type="file" name="fileUpload" class="Anh4 inputAnh4" accept="image/*"
+                           style="display:none;" />
+                    <input type="button" value="Đổi" class="btn btn-success btn-chon btnUpload" data-id="Anh4" />
+                    <img src="@Model.Anh4" class="Anh4" id="Anh4" width="100px" height="150px" />
+                </div>
+            </div>
+
+            <div class="form-group form-hinhanh">
+                <label class="control-label col-md-2">
+                    Hình ảnh
+                </label>
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Anh5, new { htmlAttributes = new { @class = "form-control label-hide hinhAnh5 hinhInputHide" } })
+
+                    <input id="Anh5" type="file" name="fileUpload" class="Anh5 inputAnh5" width="150px" height="150px" accept="image/*"
+                           style="display:none;" />
+                    <input type="button" value="Đổi" class="btn btn-success btn-chon btnUpload" data-id="Anh5" />
+                    <img src="@Model.Anh5" class="Anh5" id="Anh5" width="100px" height="150px" />
+                </div>
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "ListSanPham")
+</div>
+
+<style>
+    .hinhAnhCreated {
+        border: 2px solid black;
+        display: flex;
+        height: 50%;
+        width: 30%;
+    }
+
+    .form-hinhanh {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hinhInputHide {
+        display: none;
+    }
+
+    .form-horizontal {
+        width: 82%;
+        /* display: inline-block; */
+        position: relative;
+        left: 50%;
+        transform: translateX(-29%);
+    }
+</style>
+@section upload
+{
+    <script>
+
+        $(function () {
+            $('.btnUpload').click(function () {
+                var idInputFile = $(this).attr("data-id");
+                $('.' + idInputFile).trigger('click');
+                $('.' + idInputFile).change(function () {
+                    console.log(idInputFile);
+                    if (window.FormData !== undefined) {
+                        console.log("Vô nè");
+                        var fileUpload = $('.' + idInputFile).get(0);
+                        console.log(fileUpload);
+                        var files = fileUpload.files;
+                        console.log(files);
+                        var formData = new FormData();
+                        console.log(formData);
+                        formData.append('file', files[0]);
+                        $.ajax(
+                            {
+                                type: 'POST',
+                                url: '/BangSanPham/ProcessUpload',
+                                contentType: false,
+                                processData: false,
+                                data: formData,
+                                success: function (urlImage) {
+                                    $('.' + idInputFile).attr('src', urlImage);
+                                    $('.hinh' + idInputFile).val(urlImage);
+                                },
+                                error: function (err) {
+                                    alert('Error ', err.statusText);
+
+                                }
+                            });
+                    }
+                });
+            });
+        });
+
+
+    </script>
+}

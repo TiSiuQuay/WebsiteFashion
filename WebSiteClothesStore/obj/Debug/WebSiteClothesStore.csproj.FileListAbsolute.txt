@@ -1,0 +1,966 @@
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\WebSiteClothesStore.dll.config
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\WebSiteClothesStore.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\WebSiteClothesStore.pdb
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\csc.exe
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\csc.exe.config
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\csc.rsp
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\csi.exe
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\csi.exe.config
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\csi.rsp
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.AppContext.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Collections.Immutable.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Console.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Globalization.Calendars.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.IO.Compression.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.IO.FileSystem.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Net.Http.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Net.Sockets.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Reflection.Metadata.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.ValueTuple.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Xml.XPath.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\vbc.exe
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\vbc.exe.config
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\vbc.rsp
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\VBCSCompiler.exe
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\VBCSCompiler.exe.config
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\Antlr3.Runtime.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\Microsoft.Web.Infrastructure.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\Newtonsoft.Json.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Helpers.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Mvc.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Optimization.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Razor.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.WebPages.Deployment.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.WebPages.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.WebPages.Razor.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\WebGrease.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Helpers.xml
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Mvc.xml
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Optimization.xml
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Razor.xml
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.WebPages.xml
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.WebPages.Deployment.xml
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.WebPages.Razor.xml
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\Newtonsoft.Json.xml
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\Antlr3.Runtime.pdb
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.csproj.AssemblyReference.cache
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.csproj.CoreCompileInputs.cache
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.pdb
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\EntityFramework.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\EntityFramework.SqlServer.dll
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\EntityFramework.xml
+E:\Code web\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\EntityFramework.SqlServer.xml
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\WebSiteClothesStore.dll.config
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\WebSiteClothesStore.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\WebSiteClothesStore.pdb
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\csc.exe
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\csc.exe.config
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\csc.rsp
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\csi.exe
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\csi.exe.config
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\csi.rsp
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.AppContext.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Collections.Immutable.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Console.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Globalization.Calendars.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.IO.Compression.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.IO.FileSystem.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Net.Http.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Net.Sockets.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Reflection.Metadata.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.ValueTuple.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Xml.XPath.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\vbc.exe
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\vbc.exe.config
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\vbc.rsp
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\VBCSCompiler.exe
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\VBCSCompiler.exe.config
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\Antlr3.Runtime.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\EntityFramework.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\EntityFramework.SqlServer.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\Microsoft.Web.Infrastructure.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\Newtonsoft.Json.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Helpers.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Mvc.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Optimization.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Razor.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.WebPages.Deployment.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.WebPages.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.WebPages.Razor.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\WebGrease.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\EntityFramework.xml
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\EntityFramework.SqlServer.xml
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Helpers.xml
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Mvc.xml
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Optimization.xml
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Razor.xml
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.WebPages.xml
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.WebPages.Deployment.xml
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.WebPages.Razor.xml
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\Newtonsoft.Json.xml
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\Antlr3.Runtime.pdb
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.csproj.CoreCompileInputs.cache
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.csproj.CopyComplete
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.dll
+D:\Project Vs\ASP.NET MCV\WebSiteClothesStore\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.pdb
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\WebSiteClothesStore.dll.config
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\WebSiteClothesStore.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\WebSiteClothesStore.pdb
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\csc.exe
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\csc.exe.config
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\csc.rsp
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\csi.exe
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\csi.exe.config
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\csi.rsp
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.AppContext.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Collections.Immutable.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Console.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Globalization.Calendars.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.IO.Compression.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.IO.FileSystem.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Net.Http.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Net.Sockets.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Reflection.Metadata.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.ValueTuple.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Xml.XPath.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\vbc.exe
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\vbc.exe.config
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\vbc.rsp
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\VBCSCompiler.exe
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\VBCSCompiler.exe.config
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\Antlr3.Runtime.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\EntityFramework.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\EntityFramework.SqlServer.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\Microsoft.Web.Infrastructure.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\Newtonsoft.Json.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Helpers.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Mvc.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Optimization.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Razor.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.WebPages.Deployment.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.WebPages.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.WebPages.Razor.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\WebGrease.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\EntityFramework.xml
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\EntityFramework.SqlServer.xml
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Helpers.xml
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Mvc.xml
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Optimization.xml
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Razor.xml
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.WebPages.xml
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.WebPages.Deployment.xml
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.WebPages.Razor.xml
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\Newtonsoft.Json.xml
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\Antlr3.Runtime.pdb
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.csproj.AssemblyReference.cache
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.csproj.CoreCompileInputs.cache
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.pdb
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\WebSiteClothesStore.dll.config
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\WebSiteClothesStore.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\WebSiteClothesStore.pdb
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\csc.exe
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\csc.exe.config
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\csc.rsp
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\csi.exe
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\csi.exe.config
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\csi.rsp
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.AppContext.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Collections.Immutable.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Console.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Globalization.Calendars.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.IO.Compression.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.IO.FileSystem.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Net.Http.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Net.Sockets.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Reflection.Metadata.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.ValueTuple.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Xml.XPath.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\vbc.exe
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\vbc.exe.config
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\vbc.rsp
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\VBCSCompiler.exe
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\VBCSCompiler.exe.config
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\Antlr3.Runtime.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\EntityFramework.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\EntityFramework.SqlServer.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\Microsoft.Web.Infrastructure.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\Newtonsoft.Json.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Helpers.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Mvc.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Optimization.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Razor.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.WebPages.Deployment.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.WebPages.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.WebPages.Razor.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\WebGrease.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\EntityFramework.xml
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\EntityFramework.SqlServer.xml
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Helpers.xml
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Mvc.xml
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Optimization.xml
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Razor.xml
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.WebPages.xml
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.WebPages.Deployment.xml
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.WebPages.Razor.xml
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\Newtonsoft.Json.xml
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\Antlr3.Runtime.pdb
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.csproj.CoreCompileInputs.cache
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.csproj.CopyComplete
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.dll
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.pdb
+D:\Project Vs\ASP.NET MCV\DOANWEB\WebSiteClothesStore\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.csproj.AssemblyReference.cache
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\PagedList.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\PagedList.Mvc.dll
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\PagedList.xml
+E:\Codeweb\LaptrinhWeb\WebSiteClothesStore\WebSiteClothesStore\bin\PagedList.Mvc.xml
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\WebSiteClothesStore.dll.config
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\WebSiteClothesStore.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\WebSiteClothesStore.pdb
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\csc.exe
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\csc.exe.config
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\csc.rsp
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\csi.exe
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\csi.exe.config
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\csi.rsp
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.Managed.Core.targets
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.AppContext.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Collections.Immutable.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Console.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Globalization.Calendars.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.IO.Compression.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.IO.FileSystem.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Net.Http.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Net.Sockets.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Reflection.Metadata.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.ValueTuple.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Xml.XmlDocument.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Xml.XPath.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\vbc.exe
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\vbc.exe.config
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\vbc.rsp
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\VBCSCompiler.exe
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\VBCSCompiler.exe.config
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\Antlr3.Runtime.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\EntityFramework.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\EntityFramework.SqlServer.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\Microsoft.Web.Infrastructure.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\Newtonsoft.Json.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\PagedList.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\PagedList.Mvc.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Helpers.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Mvc.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Optimization.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Razor.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.WebPages.Deployment.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.WebPages.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.WebPages.Razor.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\WebGrease.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\EntityFramework.xml
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\EntityFramework.SqlServer.xml
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\PagedList.xml
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\PagedList.Mvc.xml
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Helpers.xml
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Mvc.xml
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Optimization.xml
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Razor.xml
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.WebPages.xml
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.WebPages.Deployment.xml
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.WebPages.Razor.xml
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\Newtonsoft.Json.xml
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\Antlr3.Runtime.pdb
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.csproj.AssemblyReference.cache
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.csproj.CoreCompileInputs.cache
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.csproj.CopyComplete
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.dll
+D:\T4\WebSiteClothesStore\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.pdb
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\WebSiteClothesStore.dll.config
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\WebSiteClothesStore.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\WebSiteClothesStore.pdb
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\csc.exe
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\csc.exe.config
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\csc.rsp
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\csi.exe
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\csi.exe.config
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\csi.rsp
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.AppContext.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Collections.Immutable.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Console.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Globalization.Calendars.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.IO.Compression.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.IO.FileSystem.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Net.Http.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Net.Sockets.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Reflection.Metadata.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.ValueTuple.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Xml.XPath.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\vbc.exe
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\vbc.exe.config
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\vbc.rsp
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\VBCSCompiler.exe
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\roslyn\VBCSCompiler.exe.config
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\Antlr3.Runtime.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\EntityFramework.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\EntityFramework.SqlServer.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\Microsoft.Web.Infrastructure.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\Newtonsoft.Json.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\PagedList.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\PagedList.Mvc.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Helpers.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Mvc.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Optimization.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Razor.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.WebPages.Deployment.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.WebPages.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.WebPages.Razor.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\WebGrease.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\EntityFramework.xml
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\EntityFramework.SqlServer.xml
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\PagedList.xml
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\PagedList.Mvc.xml
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Helpers.xml
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Mvc.xml
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Optimization.xml
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.Razor.xml
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.WebPages.xml
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.WebPages.Deployment.xml
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.Web.WebPages.Razor.xml
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\Newtonsoft.Json.xml
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\Antlr3.Runtime.pdb
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.csproj.AssemblyReference.cache
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.csproj.CoreCompileInputs.cache
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.pdb
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\WebSiteClothesStore.dll.config
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\WebSiteClothesStore.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\WebSiteClothesStore.pdb
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\csc.exe
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\csc.exe.config
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\csc.rsp
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\csi.exe
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\csi.exe.config
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\csi.rsp
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.Managed.Core.targets
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.AppContext.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Collections.Immutable.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Console.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Globalization.Calendars.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.IO.Compression.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.IO.FileSystem.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Net.Http.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Net.Sockets.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Reflection.Metadata.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.ValueTuple.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Xml.XmlDocument.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Xml.XPath.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\vbc.exe
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\vbc.exe.config
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\vbc.rsp
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\VBCSCompiler.exe
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\roslyn\VBCSCompiler.exe.config
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\Antlr3.Runtime.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\EntityFramework.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\EntityFramework.SqlServer.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\Microsoft.Web.Infrastructure.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\Newtonsoft.Json.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\PagedList.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\PagedList.Mvc.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Helpers.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Mvc.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Optimization.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Razor.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\System.Web.WebPages.Deployment.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\System.Web.WebPages.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\System.Web.WebPages.Razor.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\WebGrease.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\EntityFramework.xml
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\EntityFramework.SqlServer.xml
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\PagedList.xml
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\PagedList.Mvc.xml
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Helpers.xml
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Mvc.xml
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Optimization.xml
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Razor.xml
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\System.Web.WebPages.xml
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\System.Web.WebPages.Deployment.xml
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\System.Web.WebPages.Razor.xml
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\Newtonsoft.Json.xml
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\Antlr3.Runtime.pdb
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.csproj.AssemblyReference.cache
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.csproj.CoreCompileInputs.cache
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.csproj.CopyComplete
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.dll
+D:\BaiMoi\WebsiteClothes\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.pdb
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\WebSiteClothesStore.dll.config
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\WebSiteClothesStore.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\WebSiteClothesStore.pdb
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\csc.exe
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\csc.exe.config
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\csc.rsp
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\csi.exe
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\csi.exe.config
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\csi.rsp
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.Managed.Core.targets
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.AppContext.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Collections.Immutable.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Console.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Globalization.Calendars.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.IO.Compression.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.IO.FileSystem.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Net.Http.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Net.Sockets.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Reflection.Metadata.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.ValueTuple.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Xml.XmlDocument.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Xml.XPath.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\vbc.exe
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\vbc.exe.config
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\vbc.rsp
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\VBCSCompiler.exe
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\roslyn\VBCSCompiler.exe.config
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\Antlr3.Runtime.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\EntityFramework.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\EntityFramework.SqlServer.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\Microsoft.Web.Infrastructure.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\Newtonsoft.Json.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\PagedList.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\PagedList.Mvc.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Helpers.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Mvc.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Optimization.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Razor.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\System.Web.WebPages.Deployment.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\System.Web.WebPages.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\System.Web.WebPages.Razor.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\WebGrease.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\EntityFramework.xml
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\EntityFramework.SqlServer.xml
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\PagedList.xml
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\PagedList.Mvc.xml
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Helpers.xml
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Mvc.xml
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Optimization.xml
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Razor.xml
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\System.Web.WebPages.xml
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\System.Web.WebPages.Deployment.xml
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\System.Web.WebPages.Razor.xml
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\Newtonsoft.Json.xml
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\Antlr3.Runtime.pdb
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.csproj.AssemblyReference.cache
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.csproj.CoreCompileInputs.cache
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.csproj.CopyComplete
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.pdb
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\EPPlus.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\Microsoft.IO.RecyclableMemoryStream.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\System.ComponentModel.Annotations.dll
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\EPPlus.xml
+D:\BaiNew\WebsiteClothes\WebSiteClothesStore\bin\Microsoft.IO.RecyclableMemoryStream.xml
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\EPPlus.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\Microsoft.IO.RecyclableMemoryStream.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\System.ComponentModel.Annotations.dll
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\EPPlus.xml
+E:\Codeweb\LaptrinhWeb\DoAnWeb\WebSiteClothesStore\WebSiteClothesStore\bin\Microsoft.IO.RecyclableMemoryStream.xml
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\WebSiteClothesStore.dll.config
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\WebSiteClothesStore.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\WebSiteClothesStore.pdb
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\csc.exe
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\csc.exe.config
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\csc.rsp
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\csi.exe
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\csi.exe.config
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\csi.rsp
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.AppContext.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Console.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.IO.Compression.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Net.Http.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Net.Sockets.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.ValueTuple.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Xml.XPath.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\vbc.exe
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\vbc.exe.config
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\vbc.rsp
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\VBCSCompiler.exe
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\Antlr3.Runtime.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\EntityFramework.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\EntityFramework.SqlServer.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\EPPlus.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\Newtonsoft.Json.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\PagedList.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\PagedList.Mvc.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\System.ComponentModel.Annotations.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Helpers.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Mvc.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Optimization.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Razor.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\System.Web.WebPages.Deployment.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\System.Web.WebPages.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\System.Web.WebPages.Razor.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\WebGrease.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\EntityFramework.xml
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\EntityFramework.SqlServer.xml
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\EPPlus.xml
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\Microsoft.IO.RecyclableMemoryStream.xml
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\PagedList.xml
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\PagedList.Mvc.xml
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Helpers.xml
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Mvc.xml
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Optimization.xml
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Razor.xml
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\System.Web.WebPages.xml
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\System.Web.WebPages.Deployment.xml
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\System.Web.WebPages.Razor.xml
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\Newtonsoft.Json.xml
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\Antlr3.Runtime.pdb
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.csproj.AssemblyReference.cache
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.csproj.CoreCompileInputs.cache
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.csproj.CopyComplete
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.dll
+C:\Users\nhan2\OneDrive\Desktop\NEW\WebsiteClothes\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.pdb
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\WebSiteClothesStore.dll.config
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\WebSiteClothesStore.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\WebSiteClothesStore.pdb
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\csc.exe
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\csc.exe.config
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\csc.rsp
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\csi.exe
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\csi.exe.config
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\csi.rsp
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.AppContext.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Collections.Immutable.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Console.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Globalization.Calendars.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.IO.Compression.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.IO.FileSystem.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Net.Http.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Net.Sockets.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Reflection.Metadata.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.ValueTuple.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Xml.XPath.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\vbc.exe
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\vbc.exe.config
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\vbc.rsp
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\VBCSCompiler.exe
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\VBCSCompiler.exe.config
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\Antlr3.Runtime.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\EntityFramework.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\EntityFramework.SqlServer.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\EPPlus.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\Microsoft.IO.RecyclableMemoryStream.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\Microsoft.Web.Infrastructure.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\Newtonsoft.Json.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\PagedList.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\PagedList.Mvc.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\System.ComponentModel.Annotations.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Helpers.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Mvc.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Optimization.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Razor.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\System.Web.WebPages.Deployment.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\System.Web.WebPages.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\System.Web.WebPages.Razor.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\WebGrease.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\EntityFramework.xml
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\EntityFramework.SqlServer.xml
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\EPPlus.xml
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\Microsoft.IO.RecyclableMemoryStream.xml
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\PagedList.xml
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\PagedList.Mvc.xml
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Helpers.xml
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Mvc.xml
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Optimization.xml
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Razor.xml
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\System.Web.WebPages.xml
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\System.Web.WebPages.Deployment.xml
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\System.Web.WebPages.Razor.xml
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\Newtonsoft.Json.xml
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\Antlr3.Runtime.pdb
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.csproj.AssemblyReference.cache
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.csproj.CoreCompileInputs.cache
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.csproj.CopyComplete
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.dll
+D:\Tài Liệu Học Tập\Project seminar\WebsiteClothes\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.pdb
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\WebSiteClothesStore.dll.config
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\WebSiteClothesStore.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\WebSiteClothesStore.pdb
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\csc.exe
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\csc.exe.config
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\csc.rsp
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\csi.exe
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\csi.exe.config
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\csi.rsp
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.AppContext.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Collections.Immutable.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Console.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Globalization.Calendars.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.IO.Compression.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.IO.FileSystem.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Net.Http.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Net.Sockets.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Reflection.Metadata.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.ValueTuple.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Xml.XPath.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\vbc.exe
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\vbc.exe.config
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\vbc.rsp
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\VBCSCompiler.exe
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\roslyn\VBCSCompiler.exe.config
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\Antlr3.Runtime.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\EntityFramework.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\EntityFramework.SqlServer.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\EPPlus.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\Microsoft.IO.RecyclableMemoryStream.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\Microsoft.Web.Infrastructure.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\Newtonsoft.Json.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\PagedList.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\PagedList.Mvc.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\System.ComponentModel.Annotations.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Helpers.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Mvc.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Optimization.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Razor.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\System.Web.WebPages.Deployment.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\System.Web.WebPages.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\System.Web.WebPages.Razor.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\WebGrease.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\EntityFramework.xml
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\EntityFramework.SqlServer.xml
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\EPPlus.xml
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\Microsoft.IO.RecyclableMemoryStream.xml
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\PagedList.xml
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\PagedList.Mvc.xml
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Helpers.xml
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Mvc.xml
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Optimization.xml
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\System.Web.Razor.xml
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\System.Web.WebPages.xml
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\System.Web.WebPages.Deployment.xml
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\System.Web.WebPages.Razor.xml
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\Newtonsoft.Json.xml
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\Antlr3.Runtime.pdb
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.csproj.AssemblyReference.cache
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.csproj.CoreCompileInputs.cache
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.csproj.CopyComplete
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.dll
+D:\Project seminar\WebsiteClothes\WebSiteClothesStore\obj\Debug\WebSiteClothesStore.pdb

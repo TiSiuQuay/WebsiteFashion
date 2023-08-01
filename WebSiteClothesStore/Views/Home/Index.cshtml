@@ -1,0 +1,20 @@
+﻿@using WebSiteClothesStore.Models
+@{
+
+    Layout = "~/Views/HomeLayout/HomeLayout.cshtml";
+}
+
+
+@{
+    IEnumerable<LoaiSanPham> listLoaiSanPham = (IEnumerable<LoaiSanPham>)ViewBag.ListCategory;
+    IEnumerable<BangSanPham> listProduct = (IEnumerable<BangSanPham>)ViewBag.ListProduct;
+}
+
+@Html.Partial("~/Views/SanPhamIndex/ViewPartialCategory.cshtml", listLoaiSanPham)
+
+<h1 style="text-align:center;">Sản phẩm được mua nhiều nhất</h1>
+@Html.Partial("~/Views/SanPhamIndex/ViewPartialNewProducts.cshtml", listProduct)
+
+<script>
+    
+</script>

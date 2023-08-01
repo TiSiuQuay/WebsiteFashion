@@ -1,0 +1,249 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MH_Fashion</title>
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="~/Content/MenuPartial.css" rel="stylesheet" />
+    <link href="~/Content/css/ProductLayout.css" rel="stylesheet" />
+    <link href="~/Content/css/Product.css" rel="stylesheet" />
+
+</head>
+
+@using WebSiteClothesStore.Models
+@{
+    MydataContext context = new MydataContext();
+}
+<body>
+    <header>
+        @Html.Partial("~/Views/Home/HeaferLayoutAdminPartial.cshtml")
+        <!-- //header container -->
+    </header>
+
+    <div class="title-update">
+
+        <div class="col-md-3 market-update-gd item-title">
+            <a href="@Url.Action("ListDanhMuc","DanhMuc")" class="itemOption">
+                <div class="market-update-block clr-block-2">
+                    <div class="col-md-2 market-update-right">
+                        <i class="fa fa-eye"> </i>
+                    </div>
+                    <div class="col-md-10 market-update-left">
+                        <h4>Danh mục sản phẩm</h4>
+                        <h3>(@context.LoaiSanPhams.Count()) loại sản phẩm</h3>
+                        <p>(@context.LoaiSanPhams.Sum(p => p.BangSanPhams.Count())) Sản phẩm</p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </a>
+        </div>
+
+
+
+        <div class="col-md-3 market-update-gd item-title">
+            <a href="@Url.Action("ListSanPham","BangSanPham")" class="itemOption">
+                <div class="market-update-block clr-block-2">
+                    <div class="col-md-2 market-update-right">
+                        <i class="fa fa-eye"> </i>
+                    </div>
+                    <div class="col-md-10 market-update-left">
+                        <h4>Sản phẩm</h4>
+                        <h3>(@context.BangSanPhams.Count())Sản phẩm</h3>
+                        <p>(@context.CTSanPhams.Sum(p => p.SoLuongTon)) Số lượng còn</p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </a>
+        </div>
+
+
+
+
+        <div class="col-md-3 market-update-gd item-title">
+            <a href="@Url.Action("ListCTSanPham","CTSanPham")" class="itemOption">
+                <div class="market-update-block clr-block-2">
+                    <div class="col-md-2 market-update-right">
+                        <i class="fa fa-eye"> </i>
+                    </div>
+                    <div class="col-md-10 market-update-left">
+                        <h4>Chi tiết sản phẩm</h4>
+                        <h3>(@context.CTSanPhams.Count()) Chi tiết sản phẩm</h3>
+                        <p>(@context.CTSanPhams.Sum(p => p.SoLuongTon)) Số lượng còn</p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </a>
+        </div>
+
+
+
+        <div class="col-md-3 market-update-gd item-title">
+            <a href="@Url.Action("ListDonHangDaGiao","DonDatHang")" class="itemOption">
+                <div class="market-update-block clr-block-2">
+                    <div class="col-md-2 market-update-right">
+                        <i class="fa fa-eye"> </i>
+                    </div>
+                    <div class="col-md-10 market-update-left">
+                        <h4>Đơn hàng đã giao</h4>
+                        <h3>(@context.DonDatHangs.Where(n => n.DaThanhToan == true && n.TinhTrangDDH.Contains("Đã giao")).Count()) đơn hàng</h3>
+                        <p>Doanh thu: (@context.DonDatHangs.Where(n => n.DaThanhToan == true && n.TinhTrangDDH.Contains("Đã giao")).Sum(p => p.CTDonDatHangs.Sum(n => n.DonGia * n.SoLuong)).ToString("#,##")) VNĐ</p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </a>
+        </div>
+
+
+        <div class="col-md-3 market-update-gd item-title">
+            <a href="@Url.Action("ListDonHangDaThanhToan","DonDatHang")" class="itemOption">
+                <div class="market-update-block clr-block-2">
+                    <div class="col-md-2 market-update-right">
+                        <i class="fa fa-eye"> </i>
+                    </div>
+                    <div class="col-md-10 market-update-left">
+                        <h4>Đơn hàng đã được thanh toán</h4>
+                        <h3>(@context.DonDatHangs.Where(n => n.DaThanhToan == true).Count()) đơn hàng</h3>
+                        <p>Tổng số tiền chưa thanh toán: (@context.DonDatHangs.Where(n => n.DaThanhToan == true && n.DaHuy != true).Sum(p => p.CTDonDatHangs.Sum(n => n.DonGia * n.SoLuong)).ToString("#,##")) VNĐ</p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-3 market-update-gd item-title">
+            <a href="@Url.Action("ListDonHangDangGiao","DonDatHang")" class="itemOption">
+                <div class="market-update-block clr-block-2">
+                    <div class="col-md-2 market-update-right">
+                        <i class="fa fa-eye"> </i>
+                    </div>
+                    <div class="col-md-10 market-update-left">
+                        <h4>Đơn hàng đang giao</h4>
+                        <h3>(@context.DonDatHangs.Where(n => n.DaDat == true && n.DaHuy != true && (n.TinhTrangDDH.Contains("Đang giao") || n.TinhTrangDDH.Contains("Khách không nhận hàng"))).Count()) đơn hàng</h3>
+                        <p>Tổng số tiền chưa thanh toán: (@context.DonDatHangs.Where(n => n.DaDat == true && n.DaHuy != true && n.TinhTrangDDH.Contains("Đang giao")).Sum(p => p.CTDonDatHangs.Sum(n => n.DonGia * n.SoLuong)).ToString("#,##")) VNĐ</p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-3 market-update-gd item-title">
+            <a href="@Url.Action("ListDonDatHangDaHuy","DonDatHang")" class="itemOption">
+                <div class="market-update-block clr-block-2">
+                    <div class="col-md-2 market-update-right">
+                        <i class="fa fa-eye"> </i>
+                    </div>
+                    <div class="col-md-10 market-update-left">
+                        <h4>Đơn hàng đã bị hủy</h4>
+                        <h3>(<span class="amountCardDestroy">@context.DonDatHangs.Where(n => n.DaHuy == true).Count()</span>) đơn hàng</h3>
+                        @{
+                            var lis = context.DonDatHangs.Where(n => n.DaThanhToan != true && n.DaHuy == true);
+                            if (lis.Count() == 0)
+                            {
+
+
+                                <p>Không có đơn nào</p>
+                            }
+                            else
+                            {
+                                <p>Hiện tại có :(<span class="amountCardDestroyP">@context.DonDatHangs.Where(n => n.DaHuy == true).Count()</span>) đơn hàng đã bị hủy</p>
+                            }
+                        }
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="container container-products">
+        @RenderBody()
+    </div>
+
+
+
+    <hr />
+    <footer>
+    </footer>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+
+</html>
+
+@RenderSection("upload", required: false)
+
+<style>
+    .market-update-gd a {
+        width: 100%;
+    }
+
+    .title-update {
+        margin-top: 30px;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .market-update-gd {
+        width: 18%;
+        height: 200px;
+        border: 2px solid black;
+        display: flex;
+    }
+
+    .market-update-block {
+        width: 100%;
+    }
+
+    .container-products {
+        margin-top: 100px;
+    }
+
+    .contentCreatePro {
+    }
+
+    .title-update {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .item-title {
+        margin-top: 20px;
+    }
+
+    .container {
+        margin-top: 300px;
+    }
+
+    .itemOption.active {
+        background-color: orange;
+        color: white;
+    }
+    .container{
+        text-align:center;
+    }
+</style>
+
+<script>
+    $(".itemOption").click(function () {
+        $(this).addClass("active");
+    })
+</script>

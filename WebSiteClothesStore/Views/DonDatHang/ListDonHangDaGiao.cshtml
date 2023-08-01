@@ -1,0 +1,130 @@
+﻿@model IEnumerable<WebSiteClothesStore.Models.DonDatHang>
+@using WebSiteClothesStore.Models
+
+@{
+    ViewBag.Title = "ListDonHangDaGiao";
+    Layout = "~/Views/HomeLayout/ProductLayoutAdmin.cshtml";
+    MydataContext context = new MydataContext();
+}
+
+<h2>Các đơn hàng đã giao</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.KhachHang.TenKH)
+        </th>
+        <th>
+            SĐT
+        </th>
+        <th>
+            Địa chỉ
+        </th>
+        <th>
+            Email
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TinhTrangDDH)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DaThanhToan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UuDai)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NgayDat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NgayGiao)
+        </th>
+        <th>
+            Tổng tiền:
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.KhachHang.TenKH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KhachHang.SDT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KhachHang.DiaChi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KhachHang.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TinhTrangDDH)
+            </td>
+            <td>
+
+                @{
+                    if (item.DaThanhToan == true)
+                    {
+                        <p>Đã thanh toán</p>
+
+                    }
+                    else
+                    {
+                        <p>Chưa thanh toán</p>
+
+                    }
+                }
+
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UuDai)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgayDat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgayGiao)
+            </td>
+            <td>
+                @{
+                    double tongTien = (double)context.CTDonDatHangs.Where(p => p.MaDDH == item.MaDDH).Sum(n => n.SoLuong * n.DonGia);
+                }
+                @tongTien.ToString("#,##") VNĐ
+            </td>
+            <td>
+
+                @Html.ActionLink("Details", "DetailDHH", new { id = item.MaDDH })
+
+            </td>
+        </tr>
+
+    }
+    <tr>
+        <td>
+            @{
+                var tongTienDaThanhToan = context.CTDonDatHangs.Where(n => n.DonDatHang.DaThanhToan == true && n.DonDatHang.TinhTrangDDH.Contains("Đã giao")).Sum(p => p.DonGia * p.SoLuong);
+            }
+            Tổng số tiền đã thanh toán : @tongTienDaThanhToan.ToString("#,##") VNĐ
+        </td>
+    </tr>
+</table>
+<p>
+    @*@Html.ActionLink("Create New", "Create")*@
+    @Html.ActionLink("Xuất ra Excel", "Export")
+</p>
+<style>
+    .table {
+        border: 2px solid #000000;
+    }
+
+    th {
+        border: 1px solid black;
+    }
+
+    td {
+        border: 1px solid black;
+    }
+</style>

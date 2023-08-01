@@ -1,0 +1,129 @@
+﻿@model IEnumerable<WebSiteClothesStore.Models.BangSanPham>
+
+@{
+    ViewBag.Title = "ListSanPham";
+    Layout = "~/Views/HomeLayout/ProductLayoutAdmin.cshtml";
+}
+
+<h2>DANH SÁCH SẢN PHẨM</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Tên Loại
+        </th>
+        <th>
+            Tên Sản Phẩm 
+        </th>
+        <th>
+            Đồng Giá
+        </th>
+        <th>
+            Ngày Update
+        </th>
+        <th>
+            Mô Tả
+        </th>
+        <th>
+           Lượt Xem
+        </th>
+        <th>
+           Lượt Bình Chọn
+        </th>
+        <th>
+            Lượt Bình Luận
+        </th>
+        <th>
+            Số Lần Mua
+        </th>
+        <th>
+            Mã Seal
+        </th>
+        <th>
+            Ảnh 1
+        </th>
+        <th>
+            Ảnh 2
+        </th>
+        <th>
+            Ảnh 3
+        </th>
+        <th>
+            Ảnh 4
+        </th>
+        <th>
+            Ảnh 5
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) 
+{
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.LoaiSanPham.TenLoai)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenSP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Dongia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NgapCapNhat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MoTa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LuotXem)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LuotBinhChon)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LuotBInhLuan)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SoLanMua)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GiamGia)
+        </td>
+        <td>
+            <img src="@item.Anh1" width="200px" height="200px" alt="Set UpDate" />
+        </td>
+        <td>
+            <img src="@item.Anh2" width="200px" height="200px" alt="Set UpDate" />
+        </td>
+        <td>
+            <img src="@item.Anh3" width="200px" height="200px" alt="Set UpDate" />
+        </td>
+        <td>
+            <img src="@item.Anh4" width="200px" height="200px" alt="Set UpDate" />
+        </td>
+        <td>
+            <img src="@item.Anh5" width="200px" height="200px" alt="Set UpDate" />
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.MaSP }) |
+            
+            @Html.ActionLink("Delete", "Delete", new { id=item.MaSP })
+        </td>
+    </tr>
+}
+<p>
+    @Html.ActionLink("Xuất ra Excel", "Export")
+</p>
+</table>
+<style>
+    .table {
+        width: 960px;
+        border: 1px solid #333;
+        padding: 10px;
+        margin-left: 19%;
+    }
+</style>

@@ -1,0 +1,154 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MH_Fashion</title>
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="~/Content/MenuPartial.css" rel="stylesheet" />
+    <link href="~/Content/css/ProductLayout.css" rel="stylesheet" />
+    <link href="~/Content/css/Product.css" rel="stylesheet" />
+
+</head>
+<body>
+    <header>
+        @Html.Partial("~/Views/Home/HeaderOfLayoutPartial.cshtml")
+        <!-- //header container -->
+    </header>
+    <div class="container container-products">
+        <div class="col-lg-3 col-md-6 col-lg-8 nav-left-category col-category">
+            @Html.Action("CategoryProduct", "Product")
+        </div>
+        <div class="col-lg-9 col-md-6 col-lg-8 col-products">
+            @RenderBody()
+        </div>
+    </div>
+
+
+
+    <hr />
+    <footer>
+        <div class="containerf">
+            <!--Bắt Đầu Nội Dung Giới Thiệu-->
+            <div class="noi-dung about">
+                <h2>Về Chúng Tôi</h2>
+                <p>Lorem ipsumdolor sit...</p>
+                <ul class="social-icon">
+                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <!--Kết Thúc Nội Dung Giới Thiệu-->
+            <!--Bắt Đầu Nội Dung Đường Dẫn-->
+            <div class="noi-dung links">
+                <h2>Đường Dẫn</h2>
+                <ul>
+                    <li><a href="#">Trang Chủ</a></li>
+                    <li><a href="#">Về Chúng Tôi</a></li>
+                    <li><a href="#">Thông Tin Liên Lạc</a></li>
+                    <li><a href="#">Dịch Vụ</a></li>
+                    <li><a href="#">Điều Kiện Chính Sách</a></li>
+                </ul>
+            </div>
+            <!--Kết Thúc Nội Dung Đường Dẫn-->
+            <!--Bắt Đâu Nội Dung Liên Hệ-->
+            <div class="noi-dung contact">
+                <h2>Thông Tin Liên Hệ</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa fa-map-marker"></i></span>
+                        <span>
+                            Đường Số 1<br />
+                            Quận 1, Thành Phố Hồ Chí Minh<br />
+                            Việt Nam
+                        </span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone"></i></span>
+                        <p>
+                            <a href="#">+84 392 884 413</a>
+                            <br />
+                            <a href="#">+84 983 838 865</a>
+                        </p>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-envelope"></i></span>
+                        <p><a href="#">manhhan2501@gmail.com</a></p>
+                    </li>
+                    <li>
+                        <form class="form">
+                            <input type="email" class="form__field" placeholder="Đăng Ký Subscribe Email" />
+                            <button type="button" class="btn btn--primary  uppercase">Gửi</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+            <!--Kết Thúc Nội Dung Liên Hệ-->
+        </div>
+    </footer>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</html>
+
+@RenderSection("upload", required: false)
+
+<style>
+    .containerf {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background-color: #1D222B;
+        color: white;
+    }
+
+    .social-icon {
+        margin-top: 20px;
+        display: flex;
+    }
+
+        .social-icon li {
+            list-style: none;
+        }
+
+            .social-icon li a {
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 10px;
+                text-decoration: none;
+                border-radius: 4px;
+            }
+
+                .social-icon li a:hover {
+                    color: white;
+                    background: #f00;
+                }
+    .container-products{
+        height:1000px;
+    }
+</style>

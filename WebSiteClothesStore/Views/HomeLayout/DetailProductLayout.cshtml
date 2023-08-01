@@ -1,0 +1,74 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MH_Fashion</title>
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="~/Content/MenuPartial.css" rel="stylesheet" />
+    <link href="~/Content/css/ProductLayout.css" rel="stylesheet" />
+
+</head>
+<body>
+    <header>
+        @Html.Partial("~/Views/Home/HeaderOfLayoutPartial.cshtml")
+        <div class="container">
+
+            <!-- top nav -->
+            <nav class="ui-menu menu">
+                <ul class="navbar">
+                    <li class="nav-item">
+                        Home
+                    </li>
+
+                    <!-- //top nav -->
+                    <!-- bottom nav -->
+                    <li class="nav-item">
+                        Blog
+                    </li>
+                    <li class="nav-item">
+                        Abouts
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- //bottom nav -->
+        </div>
+        <!-- //header container -->
+    </header>
+    <div class="container container-products">
+       
+       
+            @RenderBody()
+
+    </div>
+
+
+
+    <hr />
+    <footer>
+    </footer>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</html>
+
+@RenderSection("upload", required: false)
+

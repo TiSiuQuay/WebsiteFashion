@@ -1,0 +1,147 @@
+﻿@model IEnumerable<WebSiteClothesStore.Models.ThanhVien>
+
+@{
+    ViewBag.Title = "ListTV";
+    Layout = "~/Views/HomeLayout/ProductLayoutAdmin.cshtml";
+}
+
+<h2>Danh Sách Thành Viên</h2>
+
+
+<table class="container">
+    <thead>
+        <tr>
+            <th><h1>Tên Loại</h1></th>
+            <th><h1>Tài Khoản</h1></th>
+            
+            <th><h1>Họ Tên</h1></th>
+            <th><h1>Địa Chỉ</h1></th>
+            <th><h1>Email</h1></th>
+            <th><h1>SDT</h1></th>
+            <th><h1>Câu Hỏi</h1></th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.LoaiTV.TenLoai)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaiKhoan)
+            </td>
+           
+            <td>
+                @Html.DisplayFor(modelItem => item.HoTen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DiaChi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SDT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CauHoi)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.MaTV }) |
+                @Html.ActionLink("Details", "Details", new { id = item.MaTV }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.MaTV })
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+<p>
+    @*@Html.ActionLink("Create New", "Create")*@
+    @Html.ActionLink("Xuất ra Excel", "Export")
+</p>
+<style>
+    body {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        line-height: 1.42em;
+        color: #A7A1AE;
+        background-color: #1F2739;
+    }
+
+    h1 {
+        font-size: 3em;
+        font-weight: 300;
+        line-height: 1em;
+        text-align: center;
+        color: #4DC3FA;
+    }
+
+    .container th h1 {
+        font-weight: bold;
+        font-size: 1em;
+        text-align: left;
+        color: #185875;
+    }
+
+    .container td {
+        font-weight: normal;
+        font-size: 1em;
+        -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+        -moz-box-shadow: 0 2px 2px -2px #0E1119;
+        box-shadow: 0 2px 2px -2px #0E1119;
+    }
+
+    .container {
+        text-align: left;
+        overflow: hidden;
+        width: 80%;
+        margin: 0 auto;
+        display: table;
+        padding: 0 0 8em 0;
+    }
+
+        .container td, .container th {
+            padding-bottom: 2%;
+            padding-top: 2%;
+            padding-left: 2%;
+        }
+
+        /* Background-color of the odd rows */
+        .container tr:nth-child(odd) {
+            background-color: #323C50;
+        }
+
+        /* Background-color of the even rows */
+        .container tr:nth-child(even) {
+            background-color: #2C3446;
+        }
+
+        .container th {
+            background-color: #1F2739;
+        }
+
+        .container td:first-child {
+            color: #FB667A;
+        }
+
+        .container tr:hover {
+            background-color: #464A52;
+            -webkit-box-shadow: 0 6px 6px -6px #0E1119;
+            -moz-box-shadow: 0 6px 6px -6px #0E1119;
+            box-shadow: 0 6px 6px -6px #0E1119;
+        }
+
+        .container td:hover {
+            background-color: #FFF842;
+            color: #403E10;
+            font-weight: bold;
+            box-shadow: #7F7C21 -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;
+            transform: translate3d(6px, -6px, 0);
+            transition-delay: 0s;
+            transition-duration: 0.4s;
+            transition-property: all;
+            transition-timing-function: line;
+        }
+</style>

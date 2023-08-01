@@ -1,0 +1,116 @@
+﻿@model IEnumerable<WebSiteClothesStore.Models.DonDatHang>
+@using WebSiteClothesStore.Models
+
+@{
+    ViewBag.Title = "ListDonHangDaGiao";
+    Layout = "~/Views/HomeLayout/ProductLayoutAdmin.cshtml";
+    MydataContext context = new MydataContext();
+}
+
+<h2>Các đơn hàng đã bị hủy</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.KhachHang.TenKH)
+        </th>
+        <th>
+            SĐT
+        </th>
+        <th>
+            Địa chỉ
+        </th>
+        <th>
+            Email
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TinhTrangDDH)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DaThanhToan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UuDai)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NgayDat)
+        </th>
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr id="@item.MaDDH">
+            <td>
+                @Html.DisplayFor(modelItem => item.KhachHang.TenKH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KhachHang.SDT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KhachHang.DiaChi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KhachHang.Email)
+            </td>
+            <td>
+                <p class="trangThaiGiao">@item.TinhTrangDDH</p>
+            </td>
+            <td>
+                Đã hủy
+
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UuDai)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgayDat)
+            </td>
+            <td>
+            
+
+                @Html.ActionLink("Xóa đơn hàng", "DeleteDDH", new { id = item.MaDDH })
+
+            </td>
+        </tr>
+    }
+
+</table>
+
+
+<script>
+    $(".capNhatTrangThai").click(function () {
+        var idDDH = $(this).attr("data-id");
+        var trDonHang = document.getElementById(idDDH);
+        var select = trDonHang.querySelector(".selectTinhTrangDonHang");
+        var valueSelect = $(select).val();
+        var tdTinhTrangGiao = trDonHang.querySelector(".trangThaiGiao")
+        $.ajax({
+            type: "POST",
+            data: { maDDH: idDDH, status: valueSelect },
+            url: "/DonDatHang/CapNhatDonDat",
+            success: function (status) {
+                $(tdTinhTrangGiao).html(status == true ? "Đã giao" : "Đang giao");
+            },
+            error: function (err) {
+                alert('Error ', err.statusText);
+            }
+        })
+        console.log($(select).val());
+    })
+</script>
+<style>
+    .table {
+        border: 2px solid #000000;
+    }
+
+    th {
+        border: 1px solid black;
+    }
+
+    td {
+        border: 1px solid black;
+    }
+</style>

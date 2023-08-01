@@ -1,0 +1,50 @@
+﻿@using WebSiteClothesStore.Models
+@model IEnumerable<BangSanPham>
+@{
+    ViewBag.Title = "ProductFollowIDCategory";
+    Layout = "~/Views/HomeLayout/ProductsLayout.cshtml";
+}
+@foreach (var item in Model)
+{
+    <a href="">
+        <div class="product-small box ">
+            <div class="box-image">
+                <div class="image-fade_in_back">
+                    <a href="">
+                        <img width="300" height="300" src="@item.Anh1">
+                    </a>
+                    @if (item.GiamGia != 0)
+                    {
+                        <div class="discount-product">- @item.GiamGia %</div>
+                    }
+
+                    @if (item.CTSanPhams.Sum(p => p.SoLuongTon) == 0)
+                    {
+                        <span class="inventory-product">Hết hàng</span>
+                    }
+
+                </div>
+                <div class="image-tools is-small top right show-on-hover">
+                </div>
+                <div class="image-tools is-small hide-for-small bottom left show-on-hover">
+                </div>
+                <div class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover">
+                </div>
+            </div><!-- box-image -->
+
+            <div class="box-text box-text-products text-center grid-style-2">
+                <div class="title-wrapper"><p class="name product-title"><a href="">@item.TenSP</a></p></div>
+                <div class="price-wrapper">
+                    <span class="price">@item.Dongia.ToString("#,##") VNĐ</span>
+                </div>
+            </div><!-- box-text -->
+            <button class="btn btn-add-product" data-id=@item.MaSP>
+                <i data-id=@item.MaSP class="fa-solid fa-cart-plus"></i>
+            </button>
+        </div>
+    </a>
+}
+
+
+
+

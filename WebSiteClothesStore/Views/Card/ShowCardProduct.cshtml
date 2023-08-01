@@ -1,0 +1,550 @@
+﻿@using WebSiteClothesStore.Models
+@using WebSiteClothesStore.ModelTemp
+
+@{
+    ViewBag.Title = "ShowCartProduct";
+    Layout = "~/Views/HomeLayout/CardLayout.cshtml";
+
+    IEnumerable<ItemCardTemp> listCardTemp = ViewBag.GioHangTam as IEnumerable<ItemCardTemp>;
+    IEnumerable<CTDonDatHang> listCardCSDL = ViewBag.GioHangCSDL as IEnumerable<CTDonDatHang>;
+
+    MydataContext db = new MydataContext();
+
+}
+<table class="table">
+    <tr>
+        <td>Tên SP</td>
+        <td>Hình ảnh</td>
+        <td>Đơn giá</td>
+        <td>Số lượng</td>
+        <td>Thành tiền</td>
+        <td></td>
+    </tr>
+    @if (listCardTemp != null)
+    {
+        if (listCardTemp.Count() == 0)
+        {
+            <h1 class="titleStatusTitle" style="color:#000000">Giỏ hàng trống</h1>
+        }
+    }
+    @if (listCardTemp == null && listCardCSDL == null)
+    {
+
+        <h1 class="titleStatusTitle" style="color:#000000">Giỏ hàng trống</h1>
+    }
+    else
+    {
+        if (listCardTemp != null)
+        {
+            foreach (var item in listCardTemp)
+            {
+                if (item.MaCT != null && item.MaSP != null)
+                {
+                    <tr id="@item.MaCTDDH" class="trProDuct">
+                        <td>@item.TenSP</td>
+                        <td><img src="@Url.Content(@item.HinhAnh)" width="50" height="50" /></td>
+                        <td class="col-dongia colDonGia" data-id="@item.DonGia">@item.DonGia.ToString("#,##") VNĐ</td>
+                        <td class="tdCount">
+                            @{
+                                var countExist = db.CTSanPhams.FirstOrDefault(p => p.MaCT == item.MaCT);
+                                if (countExist == null)
+                                {
+                                    //nếu sản phẩm đó không còn tồn tại
+                                    <input type="number" readonly min="1" max="120" class="inputCount has-error" value="@item.SoLuong" />
+                                    <button class="plus btnPlus btnChangeCount" disabled data-idctddh="@item.MaCTDDH">+</button>
+                                    <button class="minus btnMinus btnChangeCount" disabled data-idctddh="@item.MaCTDDH">-</button>
+                                }
+                                else
+                                {
+                                    if (countExist.SoLuongTon < item.SoLuong)
+                                    {
+                                        //nếu số lượng sản phẩm nhỏ hơn số lượng trong giỏ hàng
+                                        <input type="number" readonly min="1" max="120" class="inputCount has-error" value="@item.SoLuong" />
+                                        <button class="plus btnPlus btnChangeCount" disabled data-idctddh="@item.MaCTDDH">+</button>
+                                        <button class="minus btnMinus btnChangeCount" data-idctddh="@item.MaCTDDH">-</button>
+                                    }
+                                    else
+                                    {
+                                        <input type="number" readonly min="1" max="120" class="inputCount" value="@item.SoLuong" />
+                                        <button class="plus btnPlus btnChangeCount" data-idctddh="@item.MaCTDDH">+</button>
+                                        <button class="minus btnMinus btnChangeCount" data-idctddh="@item.MaCTDDH">-</button>
+                                    }
+                                }
+                            }
+
+                            <span class="notificationCount" style="display:block; color:red"> </span>
+
+                        </td>
+                        @{
+                            var totalPrice = item.SoLuong * item.DonGia;
+
+                            <td data-id="@totalPrice" class="thanhtien tatolPrice">@totalPrice.ToString("#,##") VNĐ</td>
+                        }
+
+                        <td>
+                            <a href="@Url.Action("DeleteProductInDetailCard", new { @maSP = item.MaSP, @maCTDDH = item.MaCTDDH, @maCTSP = item.MaCT })"><i class="fa-solid fa-trash-can"></i></a>
+                        </td>
+                    </tr>
+                }
+            }
+            <tr style="font-weight: bold; text-align: left; color:red">
+           
+                <td class="totalPriceCard" colspan="12" style="margin-left:100px;" data-id="@ViewBag.TongThanhTien">Tổng tiền:  @ViewBag.TongThanhTien.ToString("#,##") VNĐ  </td>
+            </tr>
+            <tr style="font-weight: bold; text-align: left; color:red">
+
+                <td><a href="@Url.Action("DeleteProductInDetailCard")">Xóa tất cả</a></td>
+            </tr>
+
+        }
+        else if (listCardCSDL != null)
+        {
+            foreach (var item in listCardCSDL)
+            {
+                if (item.MaSP != null && item.MaCTSP != null)
+                {
+
+
+                    <tr id="@item.MaCTDDH" class="trProDuct">
+                        <td>@item.TenSP</td>
+                        <td><img src="@Url.Content(@item.BangSanPham.Anh1)" width="50" height="50" /></td>
+                        <td id="col-dongia" class="colDonGia" data-id="@item.DonGia">@item.DonGia.ToString("#,##") VNĐ</td>
+                        <td class="tdCount">
+                            @{
+                                var countExist = db.CTSanPhams.FirstOrDefault(p => p.MaCT == item.MaCTSP);
+                                if (countExist == null)
+                                {
+                                    //nếu sản phẩm đó không còn tồn tại
+                                    <input type="number" readonly min="1" max="120" class="inputCount has-error" value="@item.SoLuong" />
+                                    <button class="plus btnPlus btnChangeCount" disabled data-idctddh="@item.MaCTDDH">+</button>
+                                    <button class="minus btnMinus btnChangeCount" disabled data-idctddh="@item.MaCTDDH">-</button>
+                                }
+                                else
+                                {
+                                    if (countExist.SoLuongTon < item.SoLuong)
+                                    {
+                                        //nếu số lượng sản phẩm nhỏ hơn số lượng trong giỏ hàng
+                                        <input type="number" readonly min="1" max="120" class="inputCount has-error" value="@item.SoLuong" />
+                                        <button class="plus btnPlus btnChangeCount" disabled data-idctddh="@item.MaCTDDH">+</button>
+                                        <button class="minus btnMinus btnChangeCount" data-idctddh="@item.MaCTDDH">-</button>
+                                    }
+                                    else
+                                    {
+                                        <input type="number" readonly min="1" max="120" class="inputCount" value="@item.SoLuong" />
+                                        <button class="plus btnPlus btnChangeCount" data-idctddh="@item.MaCTDDH">+</button>
+                                        <button class="minus btnMinus btnChangeCount" data-idctddh="@item.MaCTDDH">-</button>
+                                    }
+                                }
+                            }
+                            <span class="notificationCount" style="display:block; color:red"> </span>
+
+                        </td>
+                        @{
+                            var totalPrice = item.SoLuong * item.DonGia;
+                            <td data-id="@totalPrice" class="thanhtien tatolPrice">@totalPrice.ToString("#,##") VNĐ</td>
+                        }
+
+                        <td style="margin-left:10px;">
+                            <a href="@Url.Action("DeleteProductInDetailCard", new { @maSP = item.MaSP, @maCTDDH = item.MaCTDDH, @maCTSP = item.MaCTSP })"><i class="fa-solid fa-trash-can"></i></a>
+                        </td>
+                    </tr>
+                }
+
+            }
+            <tr style="font-weight: bold; text-align: left; color:red">
+                Tổng tiền:
+
+                <td class="totalPriceCard" colspan="12" style="margin-left:100px;" data-id="@ViewBag.TongThanhTien">Tổng tiền:  @ViewBag.TongThanhTien.ToString("#,##") VNĐ </td>
+            </tr>
+            <tr style="font-weight: bold; text-align: left; color:red">
+
+                <td><a href="@Url.Action("DeleteProductInDetailCard")">Xóa tất cả</a></td>
+            </tr>
+        }
+    }
+
+</table>
+
+@if (listCardTemp != null || listCardCSDL != null)
+{
+    <h2 style="text-align:center; margin-top:50px;">Nhập thông tin nhận hàng</h2>
+    <div class="ThongTinMuaHang">
+        @using (Html.BeginForm("OrderProducts", "Card"))
+        {
+
+            <table align="center" class="tableInfoClient">
+                <tr>
+                    <td align="center" colspan="2"><b>Thông tin khách hàng</b></td>
+                </tr>
+
+                @* Thiết kế form lưu thông tin khách hàng*@
+                @if (Session["TaiKhoan"] == null)
+                {
+                    if (Session["KhachHang"] != null)
+                    {
+                        KhachHang kh = Session["KhachHang"] as KhachHang;
+                        <tr>
+                            <td>Họ tên</td>
+                            <td>
+                                <input type="text" id="TenKH" name="TenKH" class="TenKH" value="@kh.TenKH" />
+                                <span style="color:red;" id="TB_TenKhachHang"></span>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>Địa chỉ</td>
+                            <td>
+                                <textarea type="text" id="DiaChi" name="DiaChi" class="DiaChi" value="@kh.DiaChi">
+                           
+                            </textarea>
+                                <span style="color:red;" id="TB_DiaChi"></span>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>
+                                <input type="email" id="email" name="Email" class="Email" value="@kh.Email" />
+                                <span id="ktEmail"></span>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>Số điện thoại</td>
+                            <td>
+                                <input type="number" id="SDT" name="SDT" class="SDT" value="@kh.SDT" />
+
+                                <span style="color:red;" id="TB_SDT"></span>
+                            </td>
+
+                        </tr>
+                    }
+                    else
+                    {
+                        <tr>
+                            <td>Họ tên</td>
+                            <td>
+                                @Html.TextBox("TenKH")
+                                <span style="color: red; display: block;" id="TB_TenKhachHang"></span>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>Địa chỉ</td>
+                            <td>
+                                @Html.TextArea("DiaChi")
+                                <span style="color:red; display:block;" id="TB_DiaChi"></span>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>@Html.TextBox("Email")
+                                <span style="color:red; display:block;" id="TB_Email"></span>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Số điện thoại</td>
+                            <td>
+                                @Html.TextBox("SDT")
+                                                        <span style="color:red; display:block;" id="TB_SDT"></span>
+                                                    </td>
+                           
+                        </tr>
+                        <tr style="display:none;">
+
+                            <td>@Html.Hidden("MaTV", 1)</td>
+                        </tr>
+                    }
+
+
+
+                }
+                else
+                {
+                    <tr>
+                        <td>Họ tên</td>
+                        <td>
+                            <input type="text" id="TenKH" name="TenKH" class="TenKH" value="@ViewBag.KhachHang.TenKH" />
+                            <span style="color:red;" id="TB_TenKhachHang"></span>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Địa chỉ</td>
+                        <td>
+                            <textarea type="text" id="DiaChi" name="DiaChi" class="DiaChi" value="@ViewBag.KhachHang.DiaChi">
+                            @ViewBag.KhachHang.DiaChi
+                            </textarea>
+                            <span style="color:red;" id="TB_DiaChi"></span>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>
+                            <input type="email" id="Email" name="Email" class="Email" value="@ViewBag.KhachHang.Email" />
+                            <span style="color:red;" id="TB_Email"></span>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Số điện thoại</td>
+                        <td>
+                            <input type="number" id="SDT" name="SDT" class="SDT" value="@ViewBag.KhachHang.SDT" />
+
+                            <span style="color:red;" id="TB_SDT"></span>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            Thành viên
+                        </td>
+                        <td>
+                            <input type="text" readonly style="border:none;" id="MaThanhVien" name="MaThanhVien" class="MaThanhVien" value="@ViewBag.KhachHang.ThanhVien.LoaiTV.TenLoai" />
+                        </td>
+
+                        @* Mã thành viên sẽ được tự cập nhật là 1 *@
+                    </tr>
+                }
+
+            </table>
+            <div class="divDatHang" style="text-align:center">
+                <input type="submit" value="Đặt hàng" class="btn btn-danger" id="btn-dathang" />
+                <a href="@Url.Action("ShowAllProduct", "Product")" class="btn btn-sussce">Mua tiếp</a>
+            </div>
+        }
+    </div>
+}
+<style>
+    .titleStatusTitle {
+        position: relative;
+        top: 100px;
+        left: 42%;
+    }
+
+    .table {
+        width: 100%;
+    }
+
+    .notificationCount {
+    }
+
+    table.tableInfoClient {
+        margin-left: 35%;
+        width: 30%;
+        height: 50%;
+        margin-bottom: 10%;
+        margin-top: 50px;
+    }
+
+    .tableInfoClient td {
+        border: solid 2px black;
+        padding: 20px;
+    }
+
+        .tableInfoClient td input, textarea {
+            width: 100%;
+        }
+
+    td.thanhtien.tatolPrice {
+        position: absolute;
+    }
+
+    .btn-Thanh-toan-Momo {
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+    }
+</style>
+@* Kiểm tra valiation thông qua jquerry *@
+<script>
+
+    var title = $(".titleStatusTitle").text();
+    if (title == "Giỏ hàng trống") {
+        $("#btn-dathang").addClass("disabled");
+    } else {
+        var listBtnChange = document.querySelectorAll(".btnChangeCount");
+        listBtnChange.forEach((item) => {
+            if (item.classList.contains("disabled")) {
+                $("#btn-dathang").addClass("disabled");
+            }
+        })
+    }
+    function formatCash(str) {
+        return str.split('').reverse().reduce((prev, next, index) => {
+            return ((index % 3) ? next : (next + ',')) + prev
+        })
+    }
+    $(".btnPlus").click(function () {
+
+        var idPrForTD = $(this).attr("data-idctddh");
+        var trProDuctClicked = document.getElementById(idPrForTD);
+        var elementInputCount = trProDuctClicked.querySelector('.inputCount');
+        var talToltPrice = trProDuctClicked.querySelector('.tatolPrice');
+        var valueToltal = $(talToltPrice).attr("data-id")
+        var donGia = trProDuctClicked.querySelector('.colDonGia');
+        var valueDonGia = $(donGia).attr("data-id");
+
+        var quantityProInCard = $("#countCard").text();
+        var totalPriceCard = $(".totalPriceCard");
+        var valueTotalPriceCard = $(totalPriceCard).attr("data-id");
+
+        var valuePlus = parseFloat(valueToltal) + parseFloat(valueDonGia);
+        var totalPriceCardChange = parseFloat(valueTotalPriceCard) + parseFloat(valueDonGia);
+        quantityProInCard++;
+        $.ajax({
+            type: "GET",
+            data: { maCTDDH: idPrForTD },
+            url: "/Card/PlusCountCard",
+            success: function (status) {
+                if (!parseInt(status)) {
+                    trProDuctClicked.querySelector(".notificationCount").innerText = status;
+
+                } else {
+                    elementInputCount.value = status;
+
+                    $("#countCard").html(quantityProInCard);
+                    trProDuctClicked.querySelector(".notificationCount").innerText = "";
+                    //$(talToltPrice).html("");
+                    $(talToltPrice).html(formatCash(valuePlus + "") + " VNĐ");
+                    $(".totalPriceCard").html("Tổng tiền:"+formatCash(totalPriceCardChange + "") + " VNĐ");
+                    $(".totalPriceCard").attr("data-id", totalPriceCardChange);
+                    $(talToltPrice).attr("data-id", valuePlus);
+                }
+            },
+            error: function (err) {
+                alert('Error ', err.statusText);
+            }
+        })
+    })
+    $(".btnMinus").click(function () {
+
+        var idPrForTD = $(this).attr("data-idctddh");
+        var trProDuctClicked = document.getElementById(idPrForTD);
+        var elementInputCount = trProDuctClicked.querySelector('.inputCount');
+        var talToltPrice = trProDuctClicked.querySelector('.tatolPrice');
+        var valueToltal = $(talToltPrice).attr("data-id")
+        var donGia = trProDuctClicked.querySelector('.colDonGia');
+        var valueDonGia = $(donGia).attr("data-id");
+        var quantityProBuy = trProDuctClicked.querySelector(".inputCount").value;
+        var quantityProInCard = $("#countCard").text();
+
+        var totalPriceCard = $(".totalPriceCard");
+        var valueTotalPriceCard = $(totalPriceCard).attr("data-id");
+
+        var valuePlus = parseFloat(valueToltal) - parseFloat(valueDonGia);
+        var totalPriceCardChange = parseFloat(valueTotalPriceCard) - parseFloat(valueDonGia);
+
+        quantityProBuy--;
+        quantityProInCard--;
+        if (quantityProBuy > 0) {
+            $.ajax({
+                type: "GET",
+                data: { maCTDDH: idPrForTD },
+                url: "/Card/MinusCountCard",
+                success: function (status) {
+                    if (!parseInt(status)) {
+                        trProDuctClicked.querySelector(".notificationCount").innerText = status;
+
+                    } else {
+                        $("#countCard").html(quantityProInCard);
+                        elementInputCount.value = status;
+                        trProDuctClicked.querySelector(".notificationCount").innerText = "";
+                        $(talToltPrice).html("");
+                        $(talToltPrice).html(formatCash(valuePlus + "") + " VNĐ");
+                        $(".totalPriceCard").html("Tổng tiền:" + formatCash(totalPriceCardChange + "") + " VNĐ");
+                        $(".totalPriceCard").attr("data-id", totalPriceCardChange);
+                        $(talToltPrice).attr("data-id", valuePlus);
+                    }
+                },
+                error: function (err) {
+                    alert('Error ', err.statusText);
+                }
+            })
+        }
+        else {
+            trProDuctClicked.querySelector(".notificationCount").innerText = "Không được nhập âm";
+            setTimeout(() => {
+                trProDuctClicked.querySelector(".notificationCount").innerText = "";
+            }, 5000)
+        }
+    });
+    function checkPhoneNumber() {
+        var flag = false;
+        var phone = $('#SDT').val().trim(); // ID của trường Số điện thoại
+        phone = phone.replace('(+84)', '0');
+        phone = phone.replace('+84', '0');
+        phone = phone.replace('0084', '0');
+        phone = phone.replace(/ /g, '');
+        if (phone != '') {
+            var firstNumber = phone.substring(0, 2);
+            if ((firstNumber == '09' || firstNumber == '08') && phone.length == 10) {
+                if (phone.match(/^\d{10}/)) {
+                    flag = true;
+                }
+            } else if (firstNumber == '01' && phone.length == 11) {
+                if (phone.match(/^\d{11}/)) {
+                    flag = true;
+                }
+            }
+        }
+        return flag;
+    }
+    var formatEmail = /^([\w-\.]+)@@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+    $("#btn-dathang").click(function () {
+        var loi = 0;
+       
+        if ($("#TenKH").val() == "") {
+            $("#TB_TenKhachHang").text("Tên khách hàng không được bỏ trống");
+            loi++;
+        }
+        else {
+
+            $("#TB_TenKhachHang").text("");
+        }
+        if ($("#DiaChi").val() == "") {
+            $("#TB_DiaChi").text("Địa chỉ không được bỏ trống");
+            loi++;
+        }
+        else {
+            $("#TB_DiaChi").text("");
+        }
+        if ($("#Email").val() == "") {
+            $("#TB_Email").text("Email không được bỏ trống");
+            loi++;
+        }
+        else {
+
+            $("#TB_Email").text("");
+        }
+        if ($("#SDT").val() == "") {
+            $("#TB_SDT").text("Số điện thoại không được bỏ trống");
+            loi++;
+        }
+        else {
+
+            $("#TB_SDT").text("");
+        }
+        if (!checkPhoneNumber()) {
+            $('#SDT').focus(); // ID của trường Số điện thoại
+            $("#TB_SDT").html("Vui lòng nhập đúng dịnh dạng số điện thoại");
+            loi++;
+
+        }
+        if (!formatEmail.test($("#Email").val())) {
+
+            $('#Email').focus();
+            $("#TB_Email").html("Vui lòng nhập đúng dịnh dạng email");
+            loi++;
+        }
+        if (loi != 0) {// có lỗi
+            return false;
+            // ngăn sự kiện submit đến server
+        }
+    })
+
+</script>
+

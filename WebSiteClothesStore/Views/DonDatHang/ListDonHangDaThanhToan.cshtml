@@ -1,0 +1,151 @@
+﻿@model IEnumerable<WebSiteClothesStore.Models.DonDatHang>
+@using WebSiteClothesStore.Models
+
+@{
+    ViewBag.Title = "ListDonHangDaGiao";
+    Layout = "~/Views/HomeLayout/ProductLayoutAdmin.cshtml";
+    MydataContext context = new MydataContext();
+}
+
+<h2>Các đơn hàng đã thanh toán</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.KhachHang.TenKH)
+        </th>
+        <th>
+            SĐT
+        </th>
+        <th>
+            Địa chỉ
+        </th>
+        <th>
+            Email
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TinhTrangDDH)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DaThanhToan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UuDai)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NgayDat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NgayGiao)
+        </th>
+        <th>
+            Tổng tiền:
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr id="@item.MaDDH">
+            <td>
+                @Html.DisplayFor(modelItem => item.KhachHang.TenKH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KhachHang.SDT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KhachHang.DiaChi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KhachHang.Email)
+            </td>
+            <td>
+                <p class="trangThaiGiao">@item.TinhTrangDDH</p>
+            </td>
+            <td>
+                @{
+                    if (item.DaThanhToan == true)
+                    {
+                        <span value="true"> Đã thanh toán</span>
+
+                    }
+                    else
+                    {
+                        <span value="false"> Chưa thanh toán</span>
+
+                    }
+
+                }
+
+
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UuDai)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgayDat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgayGiao)
+            </td>
+            <td>
+                @{
+                    double tongTien = (double)context.CTDonDatHangs.Where(p => p.MaDDH == item.MaDDH).Sum(n => n.SoLuong * n.DonGia);
+                }
+                @tongTien.ToString("#,##") VNĐ
+            </td>
+            <td>
+                <button class="capNhatTrangThai" data-id="@item.MaDDH"> Cập nhật</button>
+
+                @Html.ActionLink("DetailDHH", "DonDatHang", new { id = item.MaDDH })
+
+            </td>
+        </tr>
+
+    }
+    <tr>
+        <td>
+            @{
+                var tongTienDaThanhToan = context.CTDonDatHangs.Where(p => p.DonDatHang.DaThanhToan == true && p.DonDatHang.DaDat == true && p.DonDatHang.DaHuy != true).Sum(p => p.DonGia * p.SoLuong);
+            }
+            Tổng số tiền chưa thanh toán : @tongTienDaThanhToan.ToString("#,##") VNĐ
+        </td>
+    </tr>
+</table>
+
+
+<script>
+    $(".capNhatTrangThai").click(function () {
+        var idDDH = $(this).attr("data-id");
+        var trDonHang = document.getElementById(idDDH);
+        var select = trDonHang.querySelector(".selectTinhTrangDonHang");
+        var valueSelect = $(select).val();
+        var tdTinhTrangGiao = trDonHang.querySelector(".trangThaiGiao")
+        $.ajax({
+            type: "POST",
+            data: { maDDH: idDDH, status: valueSelect },
+            url: "/DonDatHang/CapNhatDonDat",
+            success: function (status) {
+                $(tdTinhTrangGiao).html(status == true ? "Đã giao" : "Đang giao");
+            },
+            error: function (err) {
+                alert('Error ', err.statusText);
+            }
+        })
+        console.log($(select).val());
+    })
+</script>
+<style>
+    .table {
+        border: 2px solid #000000;
+    }
+
+    th {
+        border: 1px solid black;
+    }
+
+    td {
+        border: 1px solid black;
+    }
+</style>

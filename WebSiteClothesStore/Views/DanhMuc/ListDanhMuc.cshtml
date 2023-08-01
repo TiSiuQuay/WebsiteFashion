@@ -1,0 +1,68 @@
+﻿@model IEnumerable<WebSiteClothesStore.Models.LoaiSanPham>
+
+@{
+    ViewBag.Title = "ListDanhMuc";
+    Layout = "~/Views/HomeLayout/ProductLayoutAdmin.cshtml";
+}
+
+<h2>DANH SÁCH SẢN PHẨM</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            Tên Loại
+        </th>
+        <th>
+            Logo
+        </th>
+        <th>
+            Bí Danh
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenLoai)
+            </td>
+            <td>
+                <img src="@item.Logo" width="200px" height="200px" alt="hinh thumbnail" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BiDanh)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.MaLoai }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.MaLoai })
+            </td>
+        </tr>
+    }
+
+</table>
+
+<style>
+    .table {
+        width: 960px;
+        border: 2px solid#000000;
+        padding: 10px;
+        margin-left:33%;
+    }
+
+    .table {
+        border: 2px solid #000000;
+    }
+
+    th {
+        border: 1px solid black;
+    }
+
+    td {
+        border: 1px solid black;
+    }
+</style>

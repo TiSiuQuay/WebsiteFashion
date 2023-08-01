@@ -1,0 +1,172 @@
+﻿@model IEnumerable<WebSiteClothesStore.Models.DonDatHang>
+@using WebSiteClothesStore.Models
+
+@{
+    ViewBag.Title = "ListDonHangDaGiao";
+    Layout = "~/Views/HomeLayout/ProductLayoutAdmin.cshtml";
+    MydataContext context = new MydataContext();
+}
+
+<h2>Các đơn hàng đang giao</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.KhachHang.TenKH)
+        </th>
+        <th>
+            SĐT
+        </th>
+        <th>
+            Địa chỉ
+        </th>
+        <th>
+            Email
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TinhTrangDDH)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DaThanhToan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UuDai)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NgayDat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NgayGiao)
+        </th>
+        <th>
+            Tổng tiền:
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr id="@item.MaDDH">
+            <td>
+                @Html.DisplayFor(modelItem => item.KhachHang.TenKH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KhachHang.SDT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KhachHang.DiaChi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KhachHang.Email)
+            </td>
+            <td>
+                <p class="trangThaiGiao">@item.TinhTrangDDH</p>
+            </td>
+            <td>
+                <select name="tinhTrangThanhToan" class="selectTinhTrangDonHang">
+                    @{
+                        if (item.DaThanhToan == true)
+                        {
+                            <option value="true"> Đã thanh toán</option>
+                            <option value=""> Chưa thanh toán</option>
+                            <option value="false"> Khách không nhận hàng</option>
+                        }
+                        else
+                        {
+                            <option value=""> Chưa thanh toán</option>
+                            <option value="true"> Đã thanh toán</option>
+                            <option value="false"> Khách không nhận hàng</option>
+                        }
+
+                    }
+
+                </select>
+
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UuDai)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgayDat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgayGiao)
+            </td>
+            <td>
+                @{
+                    double tongTien = (double)context.CTDonDatHangs.Where(p => p.MaDDH == item.MaDDH).Sum(n => n.SoLuong * n.DonGia);
+                }
+                @tongTien.ToString("#,##") VNĐ
+            </td>
+            <td>
+                <button class="capNhatTrangThai" data-id="@item.MaDDH"> Cập nhật</button>
+
+                @Html.ActionLink("DetailDHH", "DonDatHang", new { id = item.MaDDH })
+
+            </td>
+        </tr>
+
+    }
+    <tr>
+        <td>
+            @{
+                var tongTienDaThanhToan = context.CTDonDatHangs.Where(p => p.DonDatHang.DaDat == true && p.DonDatHang.DaHuy != true && (p.DonDatHang.TinhTrangDDH.Contains("Đang giao") || p.DonDatHang.TinhTrangDDH.Contains("Khách không nhận hàng"))).Sum(p => p.DonGia * p.SoLuong);
+            }
+            Tổng số tiền chưa thanh toán : @tongTienDaThanhToan.ToString("#,##") VNĐ
+        </td>
+    </tr>
+</table>
+
+
+<script>
+    $(".capNhatTrangThai").click(function () {
+        var idDDH = $(this).attr("data-id");
+        var trDonHang = document.getElementById(idDDH);
+        var select = trDonHang.querySelector(".selectTinhTrangDonHang");
+        var valueSelect = $(select).val();
+        var tdTinhTrangGiao = trDonHang.querySelector(".trangThaiGiao")
+        var valueAmountCardDestroy = $(".amountCardDestroy").text();
+
+        console.log(valueAmountCardDestroy);
+        var valueChange = parseInt(valueAmountCardDestroy)
+        if (valueSelect != "") {
+            $.ajax({
+                type: "POST",
+                data: { maDDH: idDDH, status: valueSelect },
+                url: "/DonDatHang/CapNhatDonDat",
+                success: function (status) {
+                    $(tdTinhTrangGiao).html(status == "True" ? "Đã giao" : "Khách không nhận hàng");
+                    if (status == "False") {
+                        $(".amountCardDestroy").html("");
+                        $(".amountCardDestroy").html((valueChange + 1));
+                        $(".amountCardDestroyP").html((valueChange + 1));
+
+                    } else {
+                        $(".amountCardDestroy").html("");
+                        $(".amountCardDestroy").html((valueChange - 1));
+                        $(".amountCardDestroyP").html((valueChange - 1));
+                    }
+                },
+                error: function (err) {
+                    alert('Error ', err.statusText);
+                }
+            })
+        } else {
+            alert('Bạn không được cập nhật chưa thanh toán');
+        }
+    })
+</script>
+<style>
+    .table {
+        border: 2px solid #000000;
+    }
+
+    th {
+        border: 1px solid black;
+    }
+
+    td {
+        border: 1px solid black;
+    }
+</style>

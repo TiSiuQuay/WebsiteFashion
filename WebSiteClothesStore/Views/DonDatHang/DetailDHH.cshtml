@@ -1,0 +1,105 @@
+﻿@model WebSiteClothesStore.Models.DonDatHang
+
+@{
+    ViewBag.Title = "DetailDHH";
+    Layout = "~/Views/HomeLayout/ProductLayoutAdmin.cshtml";
+}
+
+<h2>Đơn hàng</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.KhachHang.TenKH)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KhachHang.TenKH)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TinhTrangDDH)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TinhTrangDDH)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UuDai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UuDai)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NgayDat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayDat)
+        </dd>
+    </dl>
+</div>
+<h2>Chi tiết đơn hàng</h2>
+
+@if (ViewBag.CTDonDatHang != null)
+{
+    <table>
+        <tr>
+            <td>Tên sản phẩm</td>
+            <td>Kích thước</td>
+            <td>Số lượng</td>
+            <td>Đơn giá</td>
+            <td>Thành tiền</td>
+        </tr>
+
+
+        @foreach (var item in ViewBag.CTDonDatHang)
+        {
+            <tr>
+                <td>
+                    @item.TenSP
+                </td>
+                <td>
+                    @if(item.MaCTSP!=null){
+                    <p> @item.CTSanPham.KichThuoc</p>
+                    }
+                    else
+                    {
+                        <p>Sản phẩm không tồn tại</p>
+                    }
+                </td>
+                <td>
+                    @item.SoLuong
+                </td>
+                <td>
+                    @item.DonGia
+                </td>
+
+                <td>
+                    @{
+                        double thanhTien = (double)item.SoLuong * (double)@item.DonGia;
+                    }
+                    <span>@thanhTien VNĐ</span>
+                </td>
+            </tr>
+        }
+
+
+
+    </table>
+}
+else
+{
+    <h1>Không có sản phẩm nào</h1>
+}
+<style>
+    td{
+        border: 2px solid black;
+    }
+    .container {
+        text-align: left;
+    }
+</style>

@@ -1,0 +1,696 @@
+﻿@using WebSiteClothesStore.Models;
+@using WebSiteClothesStore.ModelTemp;
+@{ MydataContext db = new MydataContext(); }
+
+<link href="~/Content/css/HeaderOfLayoutPartial.css" rel="stylesheet" />
+<div class="header">
+
+    <div class="logoHeader">
+        <a style="color: white;" class="logoHeader--item" href="@Url.Action("Index","Home")">MH_Fashion</a>
+
+    </div>
+    @* tim kiem *@
+
+    <ul class="mucluc">
+        <li class="mucluc-item"> <a href="@Url.Action("Index","Home")">Home</a> </li>
+        <li class="mucluc-item">@Html.Action("MenuPartial", "Home")</li>
+        <li class="mucluc-item">Blog</li>
+        <li class="mucluc-item">Abouts</li>
+    </ul>
+
+    <ul class="left-header">
+
+        <li>
+            <div>
+                <ul class="search" style="display:flex;">
+                    @using (Html.BeginForm("LayTuKhoaTimKiem", "TimKiem"))
+                    {
+
+                        <input class="search--item" name="tuKhoa" id="tuKhoa" type="search" />
+                        <input class="btn btn-outline-secondary  ml-3 my-sm-0" type="submit" value="Search" />
+
+                    }
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div class="w3ls_right_nav ml-auto d-flex navLogin">
+
+                <ul class="account">
+                    @if (Session["TaiKhoan"] != null || Session["TaiKhoan"] != "")
+                    {
+                        ThanhVien tv = (ThanhVien)Session["TaiKhoan"];
+                        if (tv != null)
+                        {
+                            <li style="color: white">Hello @tv.HoTen </li>
+                            @Html.ActionLink(" Đăng xuất", "DangXuat", "Home");
+                        }
+                        else
+                        {
+
+                            <li><a style="color: white" id="btnDangNhap" href="#">Đăng nhập</a></li>
+
+                        }
+                    }
+                </ul>
+
+            </div>
+        </li>
+        <li>
+
+            <a href="@Url.Action("ShowCardUser","Home")">
+                <i style="font-size:20px; color: white" class="far fa-user"></i>
+            </a>
+
+
+        </li>
+        <li class="giohang--cha">
+            <div class="giohang">
+                <div class="cart-mainf">
+                    <div class="hubcart hubcart2 cart cart box_1">
+                        <a style="font-size:20px; text-decoration:none" href="@Url.Action("ShowCardProduct","Card")">
+                            <input type="hidden" name="cmd" value="_cart">
+                            <input type="hidden" name="display" value="1">
+                            <button class="btn top_hub_cart mt-1" type="submit" name="submit" value="" title="Cart">
+                                <i style="font-size:20px" class="fas fa-shopping-bag"></i>
+                                @if (Session["GioHang"] != null && Session["TaiKhoan"] != null)// nếu khách đã đăng nhập và có giỏ hàng
+                                {
+                                    DonDatHang order = (DonDatHang)Session["GioHang"];
+                                    var countSoLuong = 0;
+                                    var product = db.CTDonDatHangs.Where(p => p.MaDDH == order.MaDDH);
+                                    if (product.Count() != 0)
+                                    {
+                                        countSoLuong = (int)product.Sum(p => p.SoLuong);
+                                    }
+                                    <span class="countCard" id="countCard">@countSoLuong</span> }
+                                else
+                        if (Session["GioHangTam"] != null) // chưa có đăng nhập
+                                {
+                                    List<ItemCardTemp> itemCardTemps = Session["GioHangTam"] as List<ItemCardTemp>;
+                                    <span class="countCard" id="countCard">@itemCardTemps.Sum(p => p.SoLuong)</span>
+                                }
+                                else
+                                {
+                                    <span class="countCard" id="countCard">0</span>
+                                }
+                            </button>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="formLogin">
+    <div id="popup-login" class="">
+
+        <div class="content login-form" id="login-form">
+            <div class="row1">
+                <button class="closeForm"><i class="fa-solid fa-xmark"></i></button>
+                <h1>Đăng nhập tài khoản</h1>
+                <p> Đăng nhập để xem giỏ hàng hiện tại của bạn</p>
+
+                @using (Ajax.BeginForm("DangNhap", "Home", new { @strURL = Request.Url.ToString() }, new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId = "ThongBao" })) // muons chạy được các file view thì phải chạy thông qua controller của nó
+                {
+                    <input class="userName" type="text" name="txtTenDangNhap" required placeholder="User Name" style="border:none;">
+                    <input class="passWord MatKhau" type="password" name="txtMatKhau" required="" placeholder="Password" style="border:none;margin-top:20px;" }">
+                    <a href="#" style="display:block;margin-top:35px;" class="quenMatKhau">Quên Mật khẩu</a>
+                    <h3 style="font-weight:bold; color:red; text-align:left;" id="ThongBao"></h3>
+                    <div class="row2">
+                        <a href="#" class="btnRegistration">Đăng ký</a>
+                        <input type="submit" value="Login" id="btnLogin">
+                    </div>}
+            </div>
+        </div>
+    </div>
+    <div id="popup-Register">
+
+        <div class="content register-form formRegister" id="login-form">
+            <div class="row1">
+                <button class="closeForm" id="closeForm"><i class="fa-solid fa-xmark"></i></button>
+                <h1>Đăng ký tài khoản</h1>
+                <p> Đăng ký để trở thành một thành viên của MH_Fashion.</p>
+
+                @using (Ajax.BeginForm("DangKy", "Home", new { @strURL = Request.Url.ToString() }, new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId = "ThongBao" })) // muons chạy được các file view thì phải chạy thông qua controller của nó
+                {
+                    <div class="row3">
+                        <div class="formRegister">
+                            <div class="loginInformation">
+                                <div class="form-outline mb-4">
+                                    <label class="form-label" for="taiKhoan">Tên đăng nhập</label>
+                                    <input type="text" name="TaiKhoan" id="taiKhoan" class="form-control form-control-lg" />
+
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label" for="matkhau">Mật khẩu </label>
+                                    <input type="password" name="MatKhau" id="matkhau" class="form-control form-control-lg" />
+
+                                </div>
+                                <div class="form-outline mb-4">
+                                    <label class="form-label" for="reMatKhau">Nhập lại mật khẩu</label>
+                                    <input type="password" name="reMatKhau" id="reMatKhau" class="form-control form-control-lg" />
+                                </div>
+
+                            </div>
+                            <div class="personalInfor">
+                                <div class="form-outline mb-4">
+                                    <label class="form-label" for="hoten">Họ tên</label>
+                                    <input type="text" name="HoTen" id="hoten" class="form-control form-control-lg" />
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label" for="email">Your Email</label>
+                                    <input type="email" id="email" name="Email" class="form-control form-control-lg" />
+
+                                </div>
+                                <div class="form-outline mb-4">
+                                    <label class="form-label" for="sdt">Nhập số điện thoại của</label>
+                                    <input type="number" id="sdt" name="SDT" class="form-control form-control-lg" />
+
+                                </div>
+                                <label class="form-label" for="diaChi">Nhập số địa chỉ</label>
+                                <textarea style="display: block; margin-bottom: 10px; width: 370px; height: 30px;" id="diaChi" class="addressClient" name="DiaChi" placeholder="Nhập địa chỉ của bạn">
+                            
+        
+                       </textarea>
+                                <select name="CauHoi">
+                                    <option>Shop có đồ đẹp không</option>
+                                    <option>Shop có bán mắc không</option>
+                                    <option>Shop có có bán nhiều đồ không</option>
+                                    <option>Khi nào thì shop giảm giá</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-check d-flex justify-content-center mb-5">
+                            <input class="form-check-input me-2"
+                                   type="checkbox"
+                                   value=""
+                                   id="form2Example3cg" />
+                            <label class="form-check-label" for="form2Example3g">
+                                I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="footerDK">
+                        <div class="d-flex justify-content-center">
+                            <input type="submit" value="Đăng ký" id="btnRegister" style="margin-bottom: 10px; font-weight: bold;">
+
+                        </div>
+                        <button type="button" class="btnFormDangNhap" style="font-weight: bold;">Đăng nhập tại đây</button>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+    <div class="formQuenMatKhau">
+        @using (Ajax.BeginForm("LayMayKhau", "Home", new { @strURL = Request.Url.ToString() }, new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId = "ThongBao" })) // muons chạy được các file view thì phải chạy thông qua controller của nó
+        {
+            <div class="form-outline mb-4">
+                <label class="form-label" for="taiKhoan">Nhập tên đăng nhập</label>
+                <input type="text" name="TaiKhoan" id="taiKhoan" class="form-control form-control-lg" required />
+
+            </div>
+
+            <div class="form-outline mb-4">
+                <label class="form-label" for="email">Nhập Email nhận của người gửi</label>
+                <input type="email" name="Email" id="email" class="form-control form-control-lg" required />
+
+            </div>
+            <input type="submit" value="Lấy lại mẩ khẩu" id="btnRegister" style="margin-bottom: 10px; font-weight: bold;">
+        }
+    </div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="~/Content/js/HeaderOfLayoutPartial.js"></script>
+<style>
+    .account {
+        display: flex;
+        list-style: none;
+    }
+
+    .row2 {
+        margin-top: 20px;
+    }
+
+    .left-header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header {
+        background-color: #111 !important;
+    }
+
+    .logoHeader--item {
+        margin: 0 20px;
+        font-size: 30px;
+        text-decoration: none !important;
+    }
+
+        .logoHeader--item:hover {
+            color: white;
+            background: #23ABF2;
+            border-radius: 3px;
+        }
+
+    .formLogin {
+        background-color: antiquewhite;
+    }
+
+    .row1 h1 {
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .row1 p {
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .footerDK {
+        margin-top: -30px;
+    }
+
+
+    .logoHeader h1 {
+        margin: 0;
+    }
+
+    .row1 a {
+        font-weight: bold;
+        color: black;
+    }
+
+    .search--item {
+        height: 30px;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .header_hover_oo::before {
+        position: absolute;
+        width: 100%;
+        content: "";
+        display: block;
+        background-color: white;
+        height: 20px;
+        top: -6px;
+    }
+
+    .header_hover {
+        position: relative;
+        background-color: black;
+    }
+
+        .header_hover:before {
+            content: "";
+            position: absolute;
+            width: 15%;
+            height: 25px;
+            background-color: white;
+            top: -7%;
+            left: 0;
+            border-top-left-radius: 2000px;
+            border-top-right-radius: 2000px;
+        }
+
+    .itemProduct {
+        list-style: none;
+        padding-left: 20px;
+    }
+
+    .mucluc-item__qr:hover .header_hover {
+        display: block;
+        background-color: black;
+    }
+
+    .row3 {
+        padding: 30px;
+    }
+
+    .loginInformation {
+        padding-right: 30px;
+    }
+
+    .header_hover {
+        background-color: white;
+        position: absolute;
+        width: 500px;
+        height: 300px;
+        display: none;
+        z-index: 3;
+    }
+
+    .register-form {
+        border-radius: 50px 50px 50px;
+    }
+
+    .mucluc {
+        list-style: none;
+        display: flex;
+        color: white;
+        font-size: 20px;
+        position: relative;
+        color: #f3f3f4;
+        text-decoration: none !important;
+    }
+
+    .mucluc-item {
+        margin: 0 15px;
+        cursor: pointer;
+    }
+        /* .mucluc:before{
+        content:"";
+        position:absolute;
+        width:100%;
+        height:20px;
+        background-color:black;
+        top:0;
+        left:0;
+    }*/
+        .mucluc-item a {
+            color: lightgray;
+            text-decoration: none;
+        }
+
+            .mucluc-item a:hover {
+                color: #3377ff
+            }
+
+        .mucluc-item:hover {
+            color: white;
+        }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        box-sizing: border-box;
+    }
+
+    :root {
+        --text-color: white;
+    }
+
+    .oooo {
+        display: flex;
+        font-size: 25px;
+        margin: 29px;
+    }
+
+        .oooo div {
+            padding-right: 20px;
+        }
+
+    .giohang--cha {
+        margin: 0;
+    }
+
+    .left-header {
+        display: flex;
+        list-style: none;
+    }
+
+    .user {
+        margin: 0 15px;
+    }
+
+    .giohang {
+        margin: 0 20px;
+    }
+
+    .btnRegistration {
+        font-weight: bold;
+        color: black;
+    }
+
+    #btnLogin {
+        font-weight: bold;
+        border-radius: 6px 6px 6px;
+        color: black;
+        background-color: whitesmoke;
+    }
+
+    .dangnhap {
+        /* margin: 0 12px;
+        display: flex;
+        list-style: none;
+        font-size: 20px;
+        padding-left: 0*/
+    }
+
+    .btn {
+        font-weight: bold;
+    }
+
+    .search {
+        display: flex;
+        list-style: none;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        height: 60px;
+        /*position: fixed;*/
+        width: 100%;
+        /* background-color: #4ABDAB*/
+
+        line-height: 60px;
+    }
+
+    .closeForm {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: red;
+        color: white;
+        border: none;
+    }
+
+    .row2 a {
+        margin-top: 20px;
+    }
+
+    .closeForm {
+        font-size: 10px;
+        border-radius: 0px 20px 0px 0px;
+        padding: 10px;
+        right: -1px;
+        top: -1px;
+    }
+
+    #popup-login {
+        top: 10%;
+        left: 0;
+        width: 30%;
+        height: 70%;
+        background-color: white;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 10% 10% 10% 10%;
+    }
+
+    .formLogin {
+        top: 0;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.5);
+        z-index: 99;
+        display: none;
+    }
+
+    #login-form {
+        border-radius: 20px 20px 20px 20px;
+    }
+
+    .userName {
+        padding: 5px;
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 15px;
+        border-radius: 15px 15px;
+        border-radius: 15px 15px 15px;
+        border-radius: 15px 15px 15px;
+    }
+
+        .userName:focus {
+            background: aqua;
+            color: black;
+        }
+
+    .passWord {
+        width: 100%;
+        padding: 5px;
+        border-radius: 15px;
+        border-radius: 15px 15px;
+        border-radius: 15px 15px 15px;
+        border-radius: 15px 15px 15px;
+    }
+
+        .passWord:focus {
+            background: aqua;
+            color: black;
+        }
+
+    .top_nav {
+        border: solid 2px black;
+        display: flex;
+    }
+
+    .nav-Login {
+        display: flex;
+    }
+
+    .headerLogin {
+        background-color: yellow;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .register-form {
+        background-color: black;
+        width: 50%;
+        height: 80%;
+        top: 10%;
+        left: 25%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        min-width: 50%;
+        min-height: 80%;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0,0,0,.125);
+        border-radius: 0.5rem
+    }
+
+    .personalInfor {
+        margin-left: auto;
+        width: 250px;
+    }
+
+    .formRegister {
+        display: flex;
+    }
+
+    .register-form {
+        display: none;
+        background-color: #E0FFFF;
+    }
+
+    .formQuenMatKhau {
+        display: none;
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        background-color: lightyellow;
+    }
+</style>
+<script>
+   
+    $("#btnDangNhap").click(function () {
+        $(".formLogin").css({
+            "display": "block",
+        });
+        $("#popup-login").fadeIn(500);
+
+    })
+    $(".quenMatKhau").click(function () {
+        $("#popup-login").css({
+            "display": "none",
+        });
+        $(".formQuenMatKhau").fadeIn(500);
+    });
+    $(".closeForm").click(function () {
+        $("#popup-login").slideUp(500);
+        $(".formLogin").css({
+            "display": "none",
+        });
+        $(".formLogin").slideUp(500);
+    })
+    $("#btnLogin").click(function () {
+        var taiKhoan = $(".TaiKhoan").val();//.val() lấy giá trị trong thẻ
+        var matKhau = $(".MatKhau").val();
+        if (taiKhoan == "" || matKhau == null) {
+            alert("Lỗi");
+            return;
+        }
+    });
+    $(".btnRegistration").click(function () {
+        $("#popup-login").css({
+            "display": "none",
+        });
+        $(".register-form").fadeIn(500);
+    });
+    $(".btnFormDangNhap").click(function () {
+        $("#popup-login").css({
+            "display": "block",
+        });
+        $(".register-form").fadeOut(500);
+    })
+
+    function checkPhoneNumber() {
+        var flag = false;
+        var phone = $("#sdt").val().trim(); // ID của trường Số điện thoại
+        phone = phone.replace('(+84)', '0');
+        phone = phone.replace('+84', '0');
+        phone = phone.replace('0084', '0');
+        phone = phone.replace(/ /g, '');
+        if (phone != '') {
+            var firstNumber = phone.substring(0, 2);
+            if ((firstNumber == '09' || firstNumber == '08') && phone.length == 10) {
+                if (phone.match(/^\d{10}/)) {
+                    flag = true;
+                }
+            } else if (firstNumber == '01' && phone.length == 11) {
+                if (phone.match(/^\d{11}/)) {
+                    flag = true;
+                }
+            }
+        }
+        return flag;
+    }
+    var formatEmail = /^([\w-\.]+)@@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+   
+    
+    $("#btnRegister").click(function () {
+        var matKhau = $("#matkhau").val();
+        var reMatKhau = $("#reMatKhau").val();
+        var sdt = $("#sdt").val();
+        if (matKhau != reMatKhau) {
+            alert("Mật khẩu không giống nhau");
+            $("#reMatKhau").focus;
+            return false;
+        }
+        if (!checkPhoneNumber()) {
+            alert("Không đúng định dạng số điện thoại");
+            $("#sdt").focus;
+            return false;
+        }
+        if (!formatEmail.test($("#email").val())) {
+
+            $('#email').focus();
+            alert("Định dạne Email bị sai");
+            return false;
+        }
+        
+    })
+</script>

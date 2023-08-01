@@ -1,0 +1,181 @@
+﻿@model IEnumerable<WebSiteClothesStore.Models.CTDonDatHang>
+
+@{
+    ViewBag.Title = "DetailCard";
+    Layout = "~/Views/HomeLayout/CardLayout.cshtml";
+}
+
+<h2>Chi tiết đơn đặt hàng</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            Tên sản phẩm
+        </th>
+        <th>
+            Kích thước
+        </th>
+
+        <th>
+            Số lượng mua
+        </th>
+        <th>
+            Đơn giá
+        </th>
+        <th>
+            Đánh giá
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+
+
+<tr>
+    @if (item.MaSP == null)
+    {
+
+
+        <td>
+
+            Sản phẩm không tồn tại
+        </td>
+    }
+    else
+    {
+        <td>
+
+            @Html.DisplayFor(modelItem => item.BangSanPham.TenSP)
+        </td>
+    }
+    @if (item.MaSP == null)
+    {
+
+
+
+
+        <td>
+
+            Sản phẩm không tồn tại
+        </td>
+    }
+    else
+    {
+        <td>
+            @Html.DisplayFor(modelItem => item.CTSanPham.KichThuoc)
+        </td>
+    }
+
+
+    <td>
+        @Html.DisplayFor(modelItem => item.SoLuong)
+    </td>
+    <td>
+        @{
+            double thanhTien = (double)item.SoLuong * (double)@item.DonGia;
+        }
+        <span>@thanhTien VNĐ</span>
+    </td>
+
+    @if (item.MaSP != null || item.MaCTSP != null)
+    {
+        if (item.DonDatHang.DaThanhToan == true)
+        {
+            <td id="@item.MaCTDDH">
+                @if (item.BinhChon == 1)
+                {
+                    <i class="fa-solid  fa-face-smile like status active" data-id="@item.MaCTDDH"></i> <i class="fa-solid fa-face-frown dislike status" data-id="@item.MaCTDDH"></i>
+                }
+                else if (item.BinhChon == 0)
+                {
+                    <i class="fa-solid  fa-face-smile like status" data-id="@item.MaCTDDH"></i> <i class="fa-solid fa-face-frown dislike status active" data-id="@item.MaCTDDH"></i>
+
+                }
+                else
+                {
+                    <i class="fa-solid  fa-face-smile like status" data-id="@item.MaCTDDH"></i>
+
+                    <i class="fa-solid fa-face-frown dislike status" data-id="@item.MaCTDDH"></i>
+                }
+            </td>
+        }
+    }
+
+</tr>
+    }
+    <tr style="font-weight: bold; text-align: left; color:red">
+        <td colspan="3"> </td>
+        <td colspan="10"> @Model.Sum(p => p.DonGia * p.SoLuong) VNĐ  </td>
+    </tr>
+
+</table>
+<a href="@Url.Action("ShowCardUser","Home")"> Quay về đơn hàng</a>
+
+<style>
+    .like, .dislike {
+        color: black;
+    }
+
+        .like:hover, .dislike:hover {
+            color: red;
+        }
+
+        .like.active {
+            color: red;
+        }
+
+        .dislike.active {
+            color: red;
+        }
+
+    tr, th {
+        text-align: center;
+    }
+</style>
+<script>
+    $(".like").click(function () {
+        var maCTDH = $(this).attr("data-id");
+        var lineProduct = document.getElementById(maCTDH);
+        if (!this.classList.contains("active")) {
+            var listStatus = lineProduct.querySelectorAll(".status")
+            listStatus.forEach(function (item) {
+                if (item.classList.contains("active")) {
+                    item.classList.remove("active");
+                }
+            });
+            this.classList.add("active");
+
+            $.ajax({
+                type: "POST",
+                data: { maCTDH: maCTDH, status: "Yes" },
+                url: "/Card/VoteForProduct",
+                success: function (status) {
+                    alert(status);
+                }
+            });
+        }
+
+    })
+    $(".dislike").click(function () {
+        var maCTDH = $(this).attr("data-id");
+        var lineProduct = document.getElementById(maCTDH);
+        if (!this.classList.contains("active")) {
+            var listStatus = lineProduct.querySelectorAll(".status")
+            listStatus.forEach(function (item) {
+                if (item.classList.contains("active")) {
+                    item.classList.remove("active");
+                }
+            });
+            this.classList.add("active");
+
+            $.ajax({
+                type: "POST",
+                data: { maCTDH: maCTDH, status: "No" },
+                url: "/Card/VoteForProduct",
+                success: function (status) {
+                    alert(status);
+                }
+            });
+        }
+    })
+</script>

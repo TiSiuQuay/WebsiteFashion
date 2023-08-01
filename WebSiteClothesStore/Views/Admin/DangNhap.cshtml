@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "DangNhap";
+    Layout = "~/Views/HomeLayout/ProductLayoutAdmin.cshtml";
+}
+
+<h2>Đăng nhập tài khoản</h2>
+
+
+<div id="popup-login" class="">
+
+    <div class="content login-form" id="login-form">
+        <div class="row1">
+            <button class="closeForm"><i class="fa-solid fa-xmark"></i></button>
+            <h1>Đăng nhập tài khoản</h1>
+            <p> Đăng nhập để xem giỏ hàng hiện tại của bạn</p>
+
+            @using (Ajax.BeginForm("DangNhap", "Admin", new { @strURL = Request.Url.ToString() }, new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId = "ThongBao" })) // muons chạy được các file view thì phải chạy thông qua controller của nó
+            {
+                <input class="userName" type="text" name="txtTenDangNhap" required placeholder="User Name">
+                <input class="passWord MatKhau" type="password" name="txtMatKhau" required="" placeholder="Password" }">
+                <a href="#" style="display:block;">Quên Mật khẩu</a>
+                <h3 style="font-weight:bold; color:red; text-align:left;" id="ThongBao"></h3>
+                <div class="row2">
+                    <a href="#" class="btnRegistration">Đăng ký</a>
+                    <input type="submit" value="Login" id="btnLogin">
+                </div>}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,149 @@
+﻿@using WebSiteClothesStore.Models
+@using WebSiteClothesStore.ModelTemp
+@{
+    ViewBag.Title = "OrderProducts";
+    Layout = "~/Views/HomeLayout/CardLayout.cshtml";
+
+    IEnumerable<ItemCardTemp> listCardTemp = ViewBag.GioHangTam as IEnumerable<ItemCardTemp>;
+    IEnumerable<CTDonDatHang> listCardCSDL = ViewBag.GioHangCSDL as IEnumerable<CTDonDatHang>;
+
+    MydataContext db = new MydataContext();
+
+}
+
+<h2>Đơn hàng của</h2>
+
+<table class="table">
+    <tr>
+        <td>Tên SP</td>
+        <td>Hình ảnh</td>
+        <td>Đơn giá</td>
+        <td>Số lượng</td>
+        <td>Thành tiền</td>
+        <td></td>
+    </tr>
+    @if (listCardTemp != null)
+    {
+        if (listCardTemp.Count() == 0)
+        {
+            <h1 class="titleStatusTitle" style="color:#000000">Giỏ hàng trống</h1>
+        }
+    }
+    @if (listCardTemp == null && listCardCSDL == null)
+    {
+
+        <h1 class="titleStatusTitle" style="color:#000000">Giỏ hàng trống</h1>
+    }
+    else
+    {
+        if (listCardTemp != null)
+        {
+            foreach (var item in listCardTemp)
+            {
+                if (item.MaCT != null && item.MaSP != null)
+                {
+                    <tr id="@item.MaCTDDH" class="trProDuct">
+                        <td>@item.TenSP</td>
+                        <td><img src="@Url.Content(@item.HinhAnh)" width="50" height="50" /></td>
+                        <td class="col-dongia colDonGia" data-id="@item.DonGia">@item.DonGia.ToString("#,##") VNĐ</td>
+                        <td class="tdCount">
+                            @item.SoLuong
+                        </td>
+                        @{
+                            var totalPrice = item.SoLuong * item.DonGia;
+
+                            <td data-id="@totalPrice" class="thanhtien tatolPrice">@totalPrice.ToString("#,##") VNĐ</td>
+                        }
+                    </tr>
+                }
+            }
+            <tr style="font-weight: bold; text-align: left; color:red">
+
+                <td class="totalPrice" colspan="8"> Tổng tiền: (@String.Format("{0:0,0}", @ViewBag.TongThanhTien)) | VNĐ </td>
+            </tr>
+
+        }
+        else if (listCardCSDL != null)
+        {
+            foreach (var item in listCardCSDL)
+            {
+                if (item.MaSP != null && item.MaCTSP != null)
+                {
+
+
+                    <tr id="@item.MaCTDDH" class="trProDuct">
+                        <td>@item.TenSP</td>
+                        <td><img src="@Url.Content(@item.BangSanPham.Anh1)" width="50" height="50" /></td>
+                        <td id="col-dongia" class="colDonGia" data-id="@item.DonGia">@item.DonGia.ToString("#,##") VNĐ</td>
+                        <td class="tdCount">
+                            @item.SoLuong
+                        </td>
+                        @{
+                            var totalPrice = item.SoLuong * item.DonGia;
+                            <td data-id="@totalPrice" class="thanhtien tatolPrice">@totalPrice.ToString("#,##") VNĐ</td>
+                        }
+
+                        <td style="margin-left:10px;">
+                            <a href="@Url.Action("DeleteProductInDetailCard", new { @maSP = item.MaSP, @maCTDDH = item.MaCTDDH, @maCTSP = item.MaCTSP })"><i class="fa-solid fa-trash-can"></i></a>
+                        </td>
+                    </tr>
+                }
+            }
+            <tr style="font-weight: bold; text-align: left; color:red">
+
+                <td class="totalPrice" colspan="12" style="margin-left:100px;"> Tổng tiền: (@String.Format("{0:0,0}", @ViewBag.TongThanhTien)) | VNĐ </td>
+            </tr>
+        }
+    }
+
+</table>
+
+<h2>Thông tin người nhận</h2>
+<table border="2">
+
+
+    @if (Session["KhachHang"] != null)
+    {
+
+        KhachHang client = Session["KhachHang"] as KhachHang;
+
+        <tr>
+            <td>Họ tên</td>
+            <td>
+                @client.TenKH
+            </td>
+
+        </tr>
+        <tr>
+            <td>Địa chỉ</td>
+            <td>
+                @client.DiaChi
+            </td>
+
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>
+                @client.Email
+            </td>
+        </tr>
+        <tr>
+            <td>Số điện thoại</td>
+            <td>
+                @client.SDT
+            </td>
+        </tr>
+    }
+</table>
+
+<div class="orderPro">
+    <h2>Tiến hành đặt hàng</h2>
+
+    <span style="display:flex">Chọn hình thức thanh toán: </span>
+    <a href="@Url.Action("PaymentByMomo", "Card")" class="btn btn-sussce btn-Thanh-toan-Momo">Thanh toán qua Momo</a>
+    <a href="@Url.Action("Payment", "Card")" class="btn btn-sussce btn-Thanh-toan-Momo">Thanh toán khi nhận hàng</a>
+</div>
+
+<a href="@Url.Action("ShowCardProduct", "Card")" class="btn btn-sussce btn-Thanh-toan-Momo">Chỉnh sửa thông tin người đặt</a>
+<style>
+</style>
